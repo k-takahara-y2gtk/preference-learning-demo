@@ -1,0 +1,50 @@
+# 基本的なデータ処理ライブラリ
+numpy>=1.19.0
+pandas>=2.0.0
+scipy>=1.10.0
+scikit-learn>=1.2.0
+
+# 深層学習フレームワーク
+torch>=2.0.0
+transformers>=4.30.0
+accelerate>=0.20.0
+datasets>=2.12.0
+sentencepiece>=0.1.99
+
+# NLP関連
+spacy>=3.5.0
+nltk>=3.8.0
+langchain>=0.0.200
+langchain-community>=0.0.10
+
+# データベース関連
+sqlalchemy>=2.0.0
+chromadb>=0.4.0
+faiss-gpu>=1.7.0
+
+# 数式処理関連
+sympy>=1.12.0
+latex2sympy2>=1.9.0
+
+# 可視化
+matplotlib>=3.3.0
+seaborn>=0.12.0
+
+# APIとWeb
+fastapi>=0.100.0
+uvicorn>=0.22.0
+streamlit>=1.23.0
+
+# ユーティリティ
+tqdm>=4.65.0
+python-dotenv>=1.0.0
+pyyaml>=6.0
+jupyter>=1.0.0 
+# ローカルLLM関連
+ollama>=0.1.0
+llama-cpp-python>=0.2.0
+requests>=2.25.0
+tensorboard>=2.15.0
+
+dvc
+optuna

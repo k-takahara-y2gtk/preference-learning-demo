@@ -1,0 +1,36 @@
+2025-06-12 11:28:01,124 [INFO] Starting hyperparameter optimization at 20250612_112801
+2025-06-12 11:28:01,124 [INFO] Log directory: /workspace/mlr/lgbm/logs/optuna_20250612_112801
+[I 2025-06-12 11:28:01,124] A new study created in memory with name: no-name-30be4354-437c-4722-be4c-1a0b0b8cf3e2
+2025-06-12 11:28:01,124 [INFO] Starting optimization...
+2025-06-12 11:28:01,126 [INFO] Loading data from Fold1...
+2025-06-12 11:28:49,291 [INFO] Data loaded: 723412 training examples, 235259 validation examples
+[W 2025-06-12 11:28:49,299] Trial 0 failed with parameters: {'learning_rate': 0.13678261715614679, 'num_leaves': 36, 'max_depth': 10, 'min_data_in_leaf': 22, 'max_bin': 240, 'feature_fraction': 0.518950413971097, 'bagging_fraction': 0.8397744602196312, 'bagging_freq': 5, 'lambda_l1': 1.4522789574532864e-06, 'lambda_l2': 0.00030918509932414376, 'min_gain_to_split': 0.015562095099770992} because of the following error: TypeError("train() got an unexpected keyword argument 'verbose'").
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/workspace/mlr/lgbm/optimize_hyperparams.py", line 162, in <lambda>
+    study.optimize(lambda trial: objective(trial, fold_nums=[1, 2]), n_trials=50)
+  File "/workspace/mlr/lgbm/optimize_hyperparams.py", line 134, in objective
+    model = lgb.train(
+TypeError: train() got an unexpected keyword argument 'verbose'
+[W 2025-06-12 11:28:49,307] Trial 0 failed with value None.
+Traceback (most recent call last):
+  File "/workspace/mlr/lgbm/optimize_hyperparams.py", line 265, in <module>
+    main() 
+  File "/workspace/mlr/lgbm/optimize_hyperparams.py", line 162, in main
+    study.optimize(lambda trial: objective(trial, fold_nums=[1, 2]), n_trials=50)
+  File "/usr/local/lib/python3.10/dist-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/usr/local/lib/python3.10/dist-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/usr/local/lib/python3.10/dist-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+  File "/usr/local/lib/python3.10/dist-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/usr/local/lib/python3.10/dist-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/workspace/mlr/lgbm/optimize_hyperparams.py", line 162, in <lambda>
+    study.optimize(lambda trial: objective(trial, fold_nums=[1, 2]), n_trials=50)
+  File "/workspace/mlr/lgbm/optimize_hyperparams.py", line 134, in objective
+    model = lgb.train(
+TypeError: train() got an unexpected keyword argument 'verbose'

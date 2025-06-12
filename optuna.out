@@ -1,0 +1,405 @@
+2025-06-12 12:36:11,703 [INFO] Starting hyperparameter optimization at 20250612_123611
+2025-06-12 12:36:11,703 [INFO] Log directory: /workspace/mlr/lgbm/logs/optuna_20250612_123611
+[I 2025-06-12 12:36:11,704] A new study created in memory with name: no-name-db42c1d9-620b-4020-88ae-c103e63d2eca
+2025-06-12 12:36:11,704 [INFO] Starting hyperparameter optimization...
+  0%|          | 0/130 [00:00<?, ?it/s]2025-06-12 12:36:11,706 [INFO] Training on fold 1
+2025-06-12 12:36:11,706 [INFO] Loading data from Fold1...
+2025-06-12 12:37:00,812 [INFO] Data loaded: 723412 training examples, 235259 validation examples
+2025-06-12 12:37:00,812 [INFO] Number of training queries: 6000
+2025-06-12 12:37:00,812 [INFO] Number of validation queries: 2000
+2025-06-12 12:37:08,222 [INFO] Fold 1 NDCG@10: 0.4997
+2025-06-12 12:37:08,223 [INFO] Training on fold 2
+2025-06-12 12:37:08,223 [INFO] Loading data from Fold2...
+2025-06-12 12:37:57,256 [INFO] Data loaded: 716683 training examples, 241521 validation examples
+2025-06-12 12:37:57,257 [INFO] Number of training queries: 6000
+2025-06-12 12:37:57,257 [INFO] Number of validation queries: 2000
+2025-06-12 12:38:05,905 [INFO] Fold 2 NDCG@10: 0.4957
+2025-06-12 12:38:05,906 [INFO] Training on fold 3
+2025-06-12 12:38:05,906 [INFO] Loading data from Fold3...
+2025-06-12 12:38:56,248 [INFO] Data loaded: 719111 training examples, 241988 validation examples
+2025-06-12 12:38:56,248 [INFO] Number of training queries: 6000
+2025-06-12 12:38:56,248 [INFO] Number of validation queries: 2000
+2025-06-12 12:39:04,446 [INFO] Fold 3 NDCG@10: 0.4965
+2025-06-12 12:39:04,446 [INFO] Training on fold 4
+2025-06-12 12:39:04,446 [INFO] Loading data from Fold4...
+2025-06-12 12:39:53,809 [INFO] Data loaded: 718768 training examples, 239093 validation examples
+2025-06-12 12:39:53,809 [INFO] Number of training queries: 6000
+2025-06-12 12:39:53,809 [INFO] Number of validation queries: 2000
+2025-06-12 12:39:59,817 [INFO] Fold 4 NDCG@10: 0.4834
+2025-06-12 12:39:59,817 [INFO] Training on fold 5
+2025-06-12 12:39:59,817 [INFO] Loading data from Fold5...
+2025-06-12 12:40:49,706 [INFO] Data loaded: 722602 training examples, 242331 validation examples
+2025-06-12 12:40:49,706 [INFO] Number of training queries: 6000
+2025-06-12 12:40:49,706 [INFO] Number of validation queries: 2000
+2025-06-12 12:40:57,441 [INFO] Fold 5 NDCG@10: 0.5006
+2025-06-12 12:40:57,441 [INFO] Average NDCG@10: 0.4952
+                                         0%|          | 0/130 [04:45<?, ?it/s]Best trial: 0. Best value: 0.495166:   0%|          | 0/130 [04:45<?, ?it/s]Best trial: 0. Best value: 0.495166:   1%|          | 1/130 [04:45<10:14:29, 285.81s/it]2025-06-12 12:40:57,519 [INFO] Training on fold 1
+2025-06-12 12:40:57,519 [INFO] Loading data from Fold1...
+2025-06-12 12:41:47,062 [INFO] Data loaded: 723412 training examples, 235259 validation examples
+2025-06-12 12:41:47,062 [INFO] Number of training queries: 6000
+2025-06-12 12:41:47,062 [INFO] Number of validation queries: 2000
+2025-06-12 12:41:56,584 [INFO] Fold 1 NDCG@10: 0.5061
+2025-06-12 12:41:56,584 [INFO] Training on fold 2
+2025-06-12 12:41:56,584 [INFO] Loading data from Fold2...
+2025-06-12 12:42:46,600 [INFO] Data loaded: 716683 training examples, 241521 validation examples
+2025-06-12 12:42:46,600 [INFO] Number of training queries: 6000
+2025-06-12 12:42:46,600 [INFO] Number of validation queries: 2000
+2025-06-12 12:42:55,454 [INFO] Fold 2 NDCG@10: 0.4989
+2025-06-12 12:42:55,455 [INFO] Training on fold 3
+2025-06-12 12:42:55,455 [INFO] Loading data from Fold3...
+2025-06-12 12:43:45,370 [INFO] Data loaded: 719111 training examples, 241988 validation examples
+2025-06-12 12:43:45,370 [INFO] Number of training queries: 6000
+2025-06-12 12:43:45,370 [INFO] Number of validation queries: 2000
+2025-06-12 12:43:56,580 [INFO] Fold 3 NDCG@10: 0.4990
+2025-06-12 12:43:56,580 [INFO] Training on fold 4
+2025-06-12 12:43:56,580 [INFO] Loading data from Fold4...
+2025-06-12 12:44:47,675 [INFO] Data loaded: 718768 training examples, 239093 validation examples
+2025-06-12 12:44:47,675 [INFO] Number of training queries: 6000
+2025-06-12 12:44:47,675 [INFO] Number of validation queries: 2000
+2025-06-12 12:44:55,039 [INFO] Fold 4 NDCG@10: 0.4856
+2025-06-12 12:44:55,039 [INFO] Training on fold 5
+2025-06-12 12:44:55,039 [INFO] Loading data from Fold5...
+2025-06-12 12:45:46,016 [INFO] Data loaded: 722602 training examples, 242331 validation examples
+2025-06-12 12:45:46,016 [INFO] Number of training queries: 6000
+2025-06-12 12:45:46,016 [INFO] Number of validation queries: 2000
+2025-06-12 12:51:05,305 [INFO] Fold 5 NDCG@10: 0.5064
+2025-06-12 12:51:05,306 [INFO] Average NDCG@10: 0.4992
+                                                                                        Best trial: 0. Best value: 0.495166:   1%|          | 1/130 [14:53<10:14:29, 285.81s/it]Best trial: 1. Best value: 0.499189:   1%|          | 1/130 [14:53<10:14:29, 285.81s/it]Best trial: 1. Best value: 0.499189:   2%|▏         | 2/130 [14:53<16:53:53, 475.26s/it]2025-06-12 12:51:05,389 [INFO] Training on fold 1
+2025-06-12 12:51:05,389 [INFO] Loading data from Fold1...
+2025-06-12 12:52:09,979 [INFO] Data loaded: 723412 training examples, 235259 validation examples
+2025-06-12 12:52:09,980 [INFO] Number of training queries: 6000
+2025-06-12 12:52:09,980 [INFO] Number of validation queries: 2000
+2025-06-12 13:01:53,203 [INFO] Fold 1 NDCG@10: 0.4973
+2025-06-12 13:01:53,203 [INFO] Training on fold 2
+2025-06-12 13:01:53,203 [INFO] Loading data from Fold2...
+2025-06-12 13:02:43,774 [INFO] Data loaded: 716683 training examples, 241521 validation examples
+2025-06-12 13:02:43,774 [INFO] Number of training queries: 6000
+2025-06-12 13:02:43,774 [INFO] Number of validation queries: 2000
+2025-06-12 13:03:01,189 [INFO] Fold 2 NDCG@10: 0.5006
+2025-06-12 13:03:01,189 [INFO] Training on fold 3
+2025-06-12 13:03:01,189 [INFO] Loading data from Fold3...
+2025-06-12 13:03:52,202 [INFO] Data loaded: 719111 training examples, 241988 validation examples
+2025-06-12 13:03:52,202 [INFO] Number of training queries: 6000
+2025-06-12 13:03:52,202 [INFO] Number of validation queries: 2000
+2025-06-12 13:04:06,439 [INFO] Fold 3 NDCG@10: 0.4947
+2025-06-12 13:04:06,439 [INFO] Training on fold 4
+2025-06-12 13:04:06,439 [INFO] Loading data from Fold4...
+2025-06-12 13:04:55,776 [INFO] Data loaded: 718768 training examples, 239093 validation examples
+2025-06-12 13:04:55,776 [INFO] Number of training queries: 6000
+2025-06-12 13:04:55,776 [INFO] Number of validation queries: 2000
+2025-06-12 13:05:17,768 [INFO] Fold 4 NDCG@10: 0.4952
+2025-06-12 13:05:17,768 [INFO] Training on fold 5
+2025-06-12 13:05:17,768 [INFO] Loading data from Fold5...
+2025-06-12 13:06:07,389 [INFO] Data loaded: 722602 training examples, 242331 validation examples
+2025-06-12 13:06:07,390 [INFO] Number of training queries: 6000
+2025-06-12 13:06:07,390 [INFO] Number of validation queries: 2000
+2025-06-12 13:06:33,498 [INFO] Fold 5 NDCG@10: 0.5095
+2025-06-12 13:06:33,498 [INFO] Average NDCG@10: 0.4994
+                                                                                        Best trial: 1. Best value: 0.499189:   2%|▏         | 2/130 [30:21<16:53:53, 475.26s/it]Best trial: 2. Best value: 0.499445:   2%|▏         | 2/130 [30:21<16:53:53, 475.26s/it]Best trial: 2. Best value: 0.499445:   2%|▏         | 3/130 [30:21<24:03:43, 682.07s/it]2025-06-12 13:06:33,573 [INFO] Training on fold 1
+2025-06-12 13:06:33,573 [INFO] Loading data from Fold1...
+2025-06-12 13:07:23,618 [INFO] Data loaded: 723412 training examples, 235259 validation examples
+2025-06-12 13:07:23,618 [INFO] Number of training queries: 6000
+2025-06-12 13:07:23,618 [INFO] Number of validation queries: 2000
+2025-06-12 13:07:39,356 [INFO] Fold 1 NDCG@10: 0.5092
+2025-06-12 13:07:39,356 [INFO] Training on fold 2
+2025-06-12 13:07:39,356 [INFO] Loading data from Fold2...
+2025-06-12 13:08:29,077 [INFO] Data loaded: 716683 training examples, 241521 validation examples
+2025-06-12 13:08:29,077 [INFO] Number of training queries: 6000
+2025-06-12 13:08:29,077 [INFO] Number of validation queries: 2000
+2025-06-12 13:08:47,600 [INFO] Fold 2 NDCG@10: 0.5049
+2025-06-12 13:08:47,601 [INFO] Training on fold 3
+2025-06-12 13:08:47,601 [INFO] Loading data from Fold3...
+2025-06-12 13:09:37,395 [INFO] Data loaded: 719111 training examples, 241988 validation examples
+2025-06-12 13:09:37,395 [INFO] Number of training queries: 6000
+2025-06-12 13:09:37,395 [INFO] Number of validation queries: 2000
+2025-06-12 13:09:52,070 [INFO] Fold 3 NDCG@10: 0.5006
+2025-06-12 13:09:52,071 [INFO] Training on fold 4
+2025-06-12 13:09:52,071 [INFO] Loading data from Fold4...
+2025-06-12 13:10:42,571 [INFO] Data loaded: 718768 training examples, 239093 validation examples
+2025-06-12 13:10:42,571 [INFO] Number of training queries: 6000
+2025-06-12 13:10:42,571 [INFO] Number of validation queries: 2000
+2025-06-12 13:10:58,096 [INFO] Fold 4 NDCG@10: 0.4938
+2025-06-12 13:10:58,096 [INFO] Training on fold 5
+2025-06-12 13:10:58,096 [INFO] Loading data from Fold5...
+2025-06-12 13:11:48,680 [INFO] Data loaded: 722602 training examples, 242331 validation examples
+2025-06-12 13:11:48,680 [INFO] Number of training queries: 6000
+2025-06-12 13:11:48,680 [INFO] Number of validation queries: 2000
+2025-06-12 13:12:03,407 [INFO] Fold 5 NDCG@10: 0.5069
+2025-06-12 13:12:03,408 [INFO] Average NDCG@10: 0.5031
+                                                                                        Best trial: 2. Best value: 0.499445:   2%|▏         | 3/130 [35:51<24:03:43, 682.07s/it]Best trial: 3. Best value: 0.503057:   2%|▏         | 3/130 [35:51<24:03:43, 682.07s/it]Best trial: 3. Best value: 0.503057:   3%|▎         | 4/130 [35:51<19:00:23, 543.05s/it]2025-06-12 13:12:03,487 [INFO] Training on fold 1
+2025-06-12 13:12:03,487 [INFO] Loading data from Fold1...
+2025-06-12 13:12:53,822 [INFO] Data loaded: 723412 training examples, 235259 validation examples
+2025-06-12 13:12:53,822 [INFO] Number of training queries: 6000
+2025-06-12 13:12:53,822 [INFO] Number of validation queries: 2000
+2025-06-12 13:13:23,951 [INFO] Fold 1 NDCG@10: 0.5104
+2025-06-12 13:13:23,951 [INFO] Training on fold 2
+2025-06-12 13:13:23,951 [INFO] Loading data from Fold2...
+2025-06-12 13:14:13,447 [INFO] Data loaded: 716683 training examples, 241521 validation examples
+2025-06-12 13:14:13,448 [INFO] Number of training queries: 6000
+2025-06-12 13:14:13,448 [INFO] Number of validation queries: 2000
+2025-06-12 13:14:36,035 [INFO] Fold 2 NDCG@10: 0.5012
+2025-06-12 13:14:36,036 [INFO] Training on fold 3
+2025-06-12 13:14:36,036 [INFO] Loading data from Fold3...
+2025-06-12 13:15:26,055 [INFO] Data loaded: 719111 training examples, 241988 validation examples
+2025-06-12 13:15:26,055 [INFO] Number of training queries: 6000
+2025-06-12 13:15:26,055 [INFO] Number of validation queries: 2000
+2025-06-12 13:15:53,006 [INFO] Fold 3 NDCG@10: 0.5020
+2025-06-12 13:15:53,006 [INFO] Training on fold 4
+2025-06-12 13:15:53,006 [INFO] Loading data from Fold4...
+2025-06-12 13:16:42,808 [INFO] Data loaded: 718768 training examples, 239093 validation examples
+2025-06-12 13:16:42,808 [INFO] Number of training queries: 6000
+2025-06-12 13:16:42,808 [INFO] Number of validation queries: 2000
+2025-06-12 13:17:01,850 [INFO] Fold 4 NDCG@10: 0.4885
+2025-06-12 13:17:01,850 [INFO] Training on fold 5
+2025-06-12 13:17:01,850 [INFO] Loading data from Fold5...
+2025-06-12 13:17:52,471 [INFO] Data loaded: 722602 training examples, 242331 validation examples
+2025-06-12 13:17:52,471 [INFO] Number of training queries: 6000
+2025-06-12 13:17:52,471 [INFO] Number of validation queries: 2000
+2025-06-12 13:18:28,666 [INFO] Fold 5 NDCG@10: 0.5074
+2025-06-12 13:18:28,666 [INFO] Average NDCG@10: 0.5019
+                                                                                        Best trial: 3. Best value: 0.503057:   3%|▎         | 4/130 [42:17<19:00:23, 543.05s/it]Best trial: 3. Best value: 0.503057:   3%|▎         | 4/130 [42:17<19:00:23, 543.05s/it]Best trial: 3. Best value: 0.503057:   4%|▍         | 5/130 [42:17<16:52:48, 486.15s/it]2025-06-12 13:18:28,745 [INFO] Training on fold 1
+2025-06-12 13:18:28,745 [INFO] Loading data from Fold1...
+2025-06-12 13:19:19,543 [INFO] Data loaded: 723412 training examples, 235259 validation examples
+2025-06-12 13:19:19,543 [INFO] Number of training queries: 6000
+2025-06-12 13:19:19,543 [INFO] Number of validation queries: 2000
+2025-06-12 13:19:36,155 [INFO] Fold 1 NDCG@10: 0.5116
+2025-06-12 13:19:36,155 [INFO] Training on fold 2
+2025-06-12 13:19:36,155 [INFO] Loading data from Fold2...
+2025-06-12 13:20:26,558 [INFO] Data loaded: 716683 training examples, 241521 validation examples
+2025-06-12 13:20:26,558 [INFO] Number of training queries: 6000
+2025-06-12 13:20:26,558 [INFO] Number of validation queries: 2000
+2025-06-12 13:20:43,158 [INFO] Fold 2 NDCG@10: 0.5045
+2025-06-12 13:20:43,159 [INFO] Training on fold 3
+2025-06-12 13:20:43,159 [INFO] Loading data from Fold3...
+2025-06-12 13:21:34,222 [INFO] Data loaded: 719111 training examples, 241988 validation examples
+2025-06-12 13:21:34,222 [INFO] Number of training queries: 6000
+2025-06-12 13:21:34,222 [INFO] Number of validation queries: 2000
+2025-06-12 13:21:51,806 [INFO] Fold 3 NDCG@10: 0.5028
+2025-06-12 13:21:51,806 [INFO] Training on fold 4
+2025-06-12 13:21:51,806 [INFO] Loading data from Fold4...
+2025-06-12 13:22:41,887 [INFO] Data loaded: 718768 training examples, 239093 validation examples
+2025-06-12 13:22:41,887 [INFO] Number of training queries: 6000
+2025-06-12 13:22:41,887 [INFO] Number of validation queries: 2000
+2025-06-12 13:22:52,969 [INFO] Fold 4 NDCG@10: 0.4901
+2025-06-12 13:22:52,969 [INFO] Training on fold 5
+2025-06-12 13:22:52,969 [INFO] Loading data from Fold5...
+2025-06-12 13:23:43,764 [INFO] Data loaded: 722602 training examples, 242331 validation examples
+2025-06-12 13:23:43,764 [INFO] Number of training queries: 6000
+2025-06-12 13:23:43,764 [INFO] Number of validation queries: 2000
+2025-06-12 13:23:59,203 [INFO] Fold 5 NDCG@10: 0.5083
+2025-06-12 13:23:59,203 [INFO] Average NDCG@10: 0.5035
+                                                                                        Best trial: 3. Best value: 0.503057:   4%|▍         | 5/130 [47:47<16:52:48, 486.15s/it]Best trial: 5. Best value: 0.503476:   4%|▍         | 5/130 [47:47<16:52:48, 486.15s/it]Best trial: 5. Best value: 0.503476:   5%|▍         | 6/130 [47:47<14:55:21, 433.24s/it]2025-06-12 13:23:59,280 [INFO] Training on fold 1
+2025-06-12 13:23:59,280 [INFO] Loading data from Fold1...
+2025-06-12 13:24:49,739 [INFO] Data loaded: 723412 training examples, 235259 validation examples
+2025-06-12 13:24:49,739 [INFO] Number of training queries: 6000
+2025-06-12 13:24:49,739 [INFO] Number of validation queries: 2000
+2025-06-12 13:24:56,779 [INFO] Fold 1 NDCG@10: 0.5035
+2025-06-12 13:24:56,779 [INFO] Training on fold 2
+2025-06-12 13:24:56,779 [INFO] Loading data from Fold2...
+2025-06-12 13:25:46,609 [INFO] Data loaded: 716683 training examples, 241521 validation examples
+2025-06-12 13:25:46,609 [INFO] Number of training queries: 6000
+2025-06-12 13:25:46,609 [INFO] Number of validation queries: 2000
+2025-06-12 13:25:52,377 [INFO] Fold 2 NDCG@10: 0.4963
+2025-06-12 13:25:52,378 [INFO] Training on fold 3
+2025-06-12 13:25:52,378 [INFO] Loading data from Fold3...
+2025-06-12 13:26:42,895 [INFO] Data loaded: 719111 training examples, 241988 validation examples
+2025-06-12 13:26:42,895 [INFO] Number of training queries: 6000
+2025-06-12 13:26:42,895 [INFO] Number of validation queries: 2000
+2025-06-12 13:26:48,669 [INFO] Fold 3 NDCG@10: 0.4930
+2025-06-12 13:26:48,669 [INFO] Training on fold 4
+2025-06-12 13:26:48,669 [INFO] Loading data from Fold4...
+2025-06-12 13:27:39,235 [INFO] Data loaded: 718768 training examples, 239093 validation examples
+2025-06-12 13:27:39,235 [INFO] Number of training queries: 6000
+2025-06-12 13:27:39,235 [INFO] Number of validation queries: 2000
+2025-06-12 13:27:45,262 [INFO] Fold 4 NDCG@10: 0.4895
+2025-06-12 13:27:45,263 [INFO] Training on fold 5
+2025-06-12 13:27:45,263 [INFO] Loading data from Fold5...
+2025-06-12 13:28:35,283 [INFO] Data loaded: 722602 training examples, 242331 validation examples
+2025-06-12 13:28:35,283 [INFO] Number of training queries: 6000
+2025-06-12 13:28:35,283 [INFO] Number of validation queries: 2000
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[194]	valid's ndcg@3: 0.47795	valid's ndcg@5: 0.48375	valid's ndcg@10: 0.499706
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[188]	valid's ndcg@3: 0.466892	valid's ndcg@5: 0.475857	valid's ndcg@10: 0.495653
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[231]	valid's ndcg@3: 0.479027	valid's ndcg@5: 0.480628	valid's ndcg@10: 0.49648
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[135]	valid's ndcg@3: 0.458098	valid's ndcg@5: 0.462582	valid's ndcg@10: 0.483409
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[205]	valid's ndcg@3: 0.473935	valid's ndcg@5: 0.478943	valid's ndcg@10: 0.50058
+[I 2025-06-12 12:40:57,517] Trial 0 finished with value: 0.4951655028488172 and parameters: {'num_leaves': 118, 'learning_rate': 0.2536999076681772, 'feature_fraction': 0.839196365086843, 'bagging_fraction': 0.759195090518222, 'min_child_samples': 19, 'reg_lambda': 2.5348407664333426e-07, 'max_depth': 3}. Best is trial 0 with value: 0.4951655028488172.
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[169]	valid's ndcg@3: 0.48465	valid's ndcg@5: 0.488775	valid's ndcg@10: 0.506125
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[175]	valid's ndcg@3: 0.471512	valid's ndcg@5: 0.479783	valid's ndcg@10: 0.498855
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[218]	valid's ndcg@3: 0.484841	valid's ndcg@5: 0.483271	valid's ndcg@10: 0.499015
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[105]	valid's ndcg@3: 0.462476	valid's ndcg@5: 0.467932	valid's ndcg@10: 0.485561
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[284]	valid's ndcg@3: 0.47924	valid's ndcg@5: 0.486635	valid's ndcg@10: 0.506389
+[I 2025-06-12 12:51:05,387] Trial 1 finished with value: 0.49918894876827513 and parameters: {'num_leaves': 262, 'learning_rate': 0.07725378389307355, 'feature_fraction': 0.8248435466776274, 'bagging_fraction': 0.41235069657748147, 'min_child_samples': 98, 'reg_lambda': 0.31044435499483225, 'max_depth': 5}. Best is trial 1 with value: 0.49918894876827513.
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[122]	valid's ndcg@3: 0.478529	valid's ndcg@5: 0.48028	valid's ndcg@10: 0.497309
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[283]	valid's ndcg@3: 0.474582	valid's ndcg@5: 0.480811	valid's ndcg@10: 0.500564
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[167]	valid's ndcg@3: 0.477626	valid's ndcg@5: 0.478947	valid's ndcg@10: 0.494667
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[396]	valid's ndcg@3: 0.469693	valid's ndcg@5: 0.477109	valid's ndcg@10: 0.495153
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[496]	valid's ndcg@3: 0.483357	valid's ndcg@5: 0.491696	valid's ndcg@10: 0.509532
+[I 2025-06-12 13:06:33,571] Trial 2 finished with value: 0.499444770966787 and parameters: {'num_leaves': 62, 'learning_rate': 0.018659959624904916, 'feature_fraction': 0.5825453457757226, 'bagging_fraction': 0.7148538589793427, 'min_child_samples': 46, 'reg_lambda': 4.17890272377219e-06, 'max_depth': 9}. Best is trial 2 with value: 0.499444770966787.
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[278]	valid's ndcg@3: 0.488135	valid's ndcg@5: 0.491842	valid's ndcg@10: 0.509217
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[345]	valid's ndcg@3: 0.477863	valid's ndcg@5: 0.484638	valid's ndcg@10: 0.504853
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[245]	valid's ndcg@3: 0.483673	valid's ndcg@5: 0.485756	valid's ndcg@10: 0.500571
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[267]	valid's ndcg@3: 0.470367	valid's ndcg@5: 0.475558	valid's ndcg@10: 0.493795
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[247]	valid's ndcg@3: 0.482741	valid's ndcg@5: 0.488905	valid's ndcg@10: 0.506851
+[I 2025-06-12 13:12:03,485] Trial 3 finished with value: 0.5030574462756385 and parameters: {'num_leaves': 50, 'learning_rate': 0.027010527749605478, 'feature_fraction': 0.619817105976215, 'bagging_fraction': 0.6736419905302216, 'min_child_samples': 80, 'reg_lambda': 6.267062696005991e-07, 'max_depth': 8}. Best is trial 3 with value: 0.5030574462756385.
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[406]	valid's ndcg@3: 0.485192	valid's ndcg@5: 0.492304	valid's ndcg@10: 0.510392
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[288]	valid's ndcg@3: 0.47215	valid's ndcg@5: 0.48175	valid's ndcg@10: 0.501225
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[360]	valid's ndcg@3: 0.483025	valid's ndcg@5: 0.486659	valid's ndcg@10: 0.502038
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[225]	valid's ndcg@3: 0.462892	valid's ndcg@5: 0.468811	valid's ndcg@10: 0.488464
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[503]	valid's ndcg@3: 0.480363	valid's ndcg@5: 0.488285	valid's ndcg@10: 0.507435
+[I 2025-06-12 13:18:28,743] Trial 4 finished with value: 0.5019108934800234 and parameters: {'num_leaves': 182, 'learning_rate': 0.011711509955524094, 'feature_fraction': 0.764526911140863, 'bagging_fraction': 0.502314474212375, 'min_child_samples': 11, 'reg_lambda': 3.4671276804481113, 'max_depth': 12}. Best is trial 3 with value: 0.5030574462756385.
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[316]	valid's ndcg@3: 0.490584	valid's ndcg@5: 0.494733	valid's ndcg@10: 0.511644
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[318]	valid's ndcg@3: 0.476979	valid's ndcg@5: 0.486938	valid's ndcg@10: 0.504542
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[340]	valid's ndcg@3: 0.486548	valid's ndcg@5: 0.489416	valid's ndcg@10: 0.502831
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[170]	valid's ndcg@3: 0.464444	valid's ndcg@5: 0.471379	valid's ndcg@10: 0.49006
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[280]	valid's ndcg@3: 0.486772	valid's ndcg@5: 0.491438	valid's ndcg@10: 0.508304
+[I 2025-06-12 13:23:59,279] Trial 5 finished with value: 0.5034761499167058 and parameters: {'num_leaves': 245, 'learning_rate': 0.028180680291847244, 'feature_fraction': 0.45860326840383037, 'bagging_fraction': 0.8105398159072941, 'min_child_samples': 47, 'reg_lambda': 1.254134495897175e-07, 'max_depth': 7}. Best is trial 5 with value: 0.5034761499167058.
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[115]	valid's ndcg@3: 0.480226	valid's ndcg@5: 0.486085	valid's ndcg@10: 0.503481
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[70]	valid's ndcg@3: 0.470575	valid's ndcg@5: 0.47574	valid's ndcg@10: 0.496267
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[73]	valid's ndcg@3: 0.477029	valid's ndcg@5: 0.477253	valid's ndcg@10: 0.492995
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[80]	valid's ndcg@3: 0.462118	valid's ndcg@5: 0.467939	valid's ndcg@10: 0.489454
+2025-06-12 13:28:41,846 [INFO] Fold 5 NDCG@10: 0.5008
+2025-06-12 13:28:41,846 [INFO] Average NDCG@10: 0.4966
+                                                                                        Best trial: 5. Best value: 0.503476:   5%|▍         | 6/130 [52:30<14:55:21, 433.24s/it]Best trial: 5. Best value: 0.503476:   5%|▍         | 6/130 [52:30<14:55:21, 433.24s/it]Best trial: 5. Best value: 0.503476:   5%|▌         | 7/130 [52:30<13:07:12, 384.00s/it]2025-06-12 13:28:41,922 [INFO] Training on fold 1
+2025-06-12 13:28:41,922 [INFO] Loading data from Fold1...
+2025-06-12 13:29:32,242 [INFO] Data loaded: 723412 training examples, 235259 validation examples
+2025-06-12 13:29:32,242 [INFO] Number of training queries: 6000
+2025-06-12 13:29:32,242 [INFO] Number of validation queries: 2000
+2025-06-12 13:29:37,235 [INFO] Fold 1 NDCG@10: 0.5015
+2025-06-12 13:29:37,236 [INFO] Training on fold 2
+2025-06-12 13:29:37,236 [INFO] Loading data from Fold2...
+2025-06-12 13:30:27,663 [INFO] Data loaded: 716683 training examples, 241521 validation examples
+2025-06-12 13:30:27,663 [INFO] Number of training queries: 6000
+2025-06-12 13:30:27,663 [INFO] Number of validation queries: 2000
+2025-06-12 13:30:33,955 [INFO] Fold 2 NDCG@10: 0.4991
+2025-06-12 13:30:33,955 [INFO] Training on fold 3
+2025-06-12 13:30:33,955 [INFO] Loading data from Fold3...
+2025-06-12 13:31:23,905 [INFO] Data loaded: 719111 training examples, 241988 validation examples
+2025-06-12 13:31:23,905 [INFO] Number of training queries: 6000
+2025-06-12 13:31:23,905 [INFO] Number of validation queries: 2000
+2025-06-12 13:31:29,300 [INFO] Fold 3 NDCG@10: 0.4914
+2025-06-12 13:31:29,301 [INFO] Training on fold 4
+2025-06-12 13:31:29,301 [INFO] Loading data from Fold4...
+2025-06-12 13:32:19,715 [INFO] Data loaded: 718768 training examples, 239093 validation examples
+2025-06-12 13:32:19,715 [INFO] Number of training queries: 6000
+2025-06-12 13:32:19,715 [INFO] Number of validation queries: 2000
+2025-06-12 13:32:24,906 [INFO] Fold 4 NDCG@10: 0.4868
+2025-06-12 13:32:24,906 [INFO] Training on fold 5
+2025-06-12 13:32:24,906 [INFO] Loading data from Fold5...
+2025-06-12 13:33:16,075 [INFO] Data loaded: 722602 training examples, 242331 validation examples
+2025-06-12 13:33:16,076 [INFO] Number of training queries: 6000
+2025-06-12 13:33:16,076 [INFO] Number of validation queries: 2000
+2025-06-12 13:33:22,330 [INFO] Fold 5 NDCG@10: 0.5018
+2025-06-12 13:33:22,330 [INFO] Average NDCG@10: 0.4961
+                                                                                        Best trial: 5. Best value: 0.503476:   5%|▌         | 7/130 [57:10<13:07:12, 384.00s/it]Best trial: 5. Best value: 0.503476:   5%|▌         | 7/130 [57:10<13:07:12, 384.00s/it]Best trial: 5. Best value: 0.503476:   6%|▌         | 8/130 [57:10<11:53:48, 351.05s/it]2025-06-12 13:33:22,410 [INFO] Training on fold 1
+2025-06-12 13:33:22,410 [INFO] Loading data from Fold1...
+2025-06-12 13:34:12,145 [INFO] Data loaded: 723412 training examples, 235259 validation examples
+2025-06-12 13:34:12,145 [INFO] Number of training queries: 6000
+2025-06-12 13:34:12,145 [INFO] Number of validation queries: 2000
+2025-06-12 13:34:25,308 [INFO] Fold 1 NDCG@10: 0.5030
+2025-06-12 13:34:25,309 [INFO] Training on fold 2
+2025-06-12 13:34:25,309 [INFO] Loading data from Fold2...
+2025-06-12 13:35:14,620 [INFO] Data loaded: 716683 training examples, 241521 validation examples
+2025-06-12 13:35:14,620 [INFO] Number of training queries: 6000
+2025-06-12 13:35:14,620 [INFO] Number of validation queries: 2000
+2025-06-12 13:35:22,519 [INFO] Fold 2 NDCG@10: 0.4855
+2025-06-12 13:35:22,520 [INFO] Training on fold 3
+2025-06-12 13:35:22,520 [INFO] Loading data from Fold3...
+2025-06-12 13:36:12,149 [INFO] Data loaded: 719111 training examples, 241988 validation examples
+2025-06-12 13:36:12,149 [INFO] Number of training queries: 6000
+2025-06-12 13:36:12,149 [INFO] Number of validation queries: 2000
+2025-06-12 13:36:31,195 [INFO] Fold 3 NDCG@10: 0.4999
+2025-06-12 13:36:31,195 [INFO] Training on fold 4
+2025-06-12 13:36:31,195 [INFO] Loading data from Fold4...
+2025-06-12 13:37:20,219 [INFO] Data loaded: 718768 training examples, 239093 validation examples
+2025-06-12 13:37:20,219 [INFO] Number of training queries: 6000
+2025-06-12 13:37:20,219 [INFO] Number of validation queries: 2000
+2025-06-12 13:37:33,954 [INFO] Fold 4 NDCG@10: 0.4897
+2025-06-12 13:37:33,954 [INFO] Training on fold 5
+2025-06-12 13:37:33,955 [INFO] Loading data from Fold5...
+2025-06-12 13:38:24,756 [INFO] Data loaded: 722602 training examples, 242331 validation examples
+2025-06-12 13:38:24,756 [INFO] Number of training queries: 6000
+2025-06-12 13:38:24,757 [INFO] Number of validation queries: 2000
+2025-06-12 13:38:41,224 [INFO] Fold 5 NDCG@10: 0.5038
+2025-06-12 13:38:41,224 [INFO] Average NDCG@10: 0.4964
+                                                                                        Best trial: 5. Best value: 0.503476:   6%|▌         | 8/130 [1:02:29<11:53:48, 351.05s/it]Best trial: 5. Best value: 0.503476:   6%|▌         | 8/130 [1:02:29<11:53:48, 351.05s/it]Best trial: 5. Best value: 0.503476:   7%|▋         | 9/130 [1:02:29<11:27:40, 341.00s/it]2025-06-12 13:38:41,302 [INFO] Training on fold 1
+2025-06-12 13:38:41,302 [INFO] Loading data from Fold1...
+2025-06-12 13:39:31,799 [INFO] Data loaded: 723412 training examples, 235259 validation examples
+2025-06-12 13:39:31,799 [INFO] Number of training queries: 6000
+2025-06-12 13:39:31,799 [INFO] Number of validation queries: 2000
+2025-06-12 13:39:47,762 [INFO] Fold 1 NDCG@10: 0.5101
+2025-06-12 13:39:47,762 [INFO] Training on fold 2
+2025-06-12 13:39:47,762 [INFO] Loading data from Fold2...
+2025-06-12 13:40:37,378 [INFO] Data loaded: 716683 training examples, 241521 validation examples
+2025-06-12 13:40:37,378 [INFO] Number of training queries: 6000
+2025-06-12 13:40:37,379 [INFO] Number of validation queries: 2000
+2025-06-12 13:41:02,656 [INFO] Fold 2 NDCG@10: 0.5079
+2025-06-12 13:41:02,656 [INFO] Training on fold 3
+2025-06-12 13:41:02,656 [INFO] Loading data from Fold3...

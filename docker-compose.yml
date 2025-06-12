@@ -1,0 +1,16 @@
+services:
+  preference_learning_demo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: preference_learning_demo:latest
+    container_name: preference_learning_demo
+    volumes:
+      - .:/workspace
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    shm_size: '8gb'
+    tty: true
+    stdin_open: true
+    command: bash

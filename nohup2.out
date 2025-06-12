@@ -1,0 +1,355 @@
+2025-06-11 14:22:25,690 [INFO] Starting training run at 20250611_142225
+2025-06-11 14:22:25,690 [INFO] Log directory: /workspace/mlr/lgbm/logs/run_20250611_142225
+2025-06-11 14:22:25,690 [INFO] Data directory: /workspace/data/raw/mslr-web
+2025-06-11 14:22:25,690 [INFO] Processing Fold 1...
+2025-06-11 14:22:25,690 [INFO] Loading training data from /workspace/data/raw/mslr-web/Fold1/train.txt
+2025-06-11 14:22:57,681 [INFO] Loading validation data from /workspace/data/raw/mslr-web/Fold1/vali.txt
+2025-06-11 14:23:08,033 [INFO] Loading test data from /workspace/data/raw/mslr-web/Fold1/test.txt
+2025-06-11 14:23:18,595 [INFO] Extracting query IDs...
+2025-06-11 14:23:18,595 [INFO] Reading train query IDs...
+Reading train qids: 0it [00:00, ?it/s]Reading train qids: 13949it [00:00, 139480.49it/s]Reading train qids: 28617it [00:00, 143712.64it/s]Reading train qids: 43322it [00:00, 145231.83it/s]Reading train qids: 58024it [00:00, 145933.82it/s]Reading train qids: 72618it [00:00, 141896.72it/s]Reading train qids: 86827it [00:00, 141379.25it/s]2025-06-11 14:23:19,303 [INFO]   Processed 100000 training examples
+Reading train qids: 100977it [00:00, 139730.46it/s]Reading train qids: 115375it [00:00, 141057.08it/s]Reading train qids: 130220it [00:00, 143337.00it/s]Reading train qids: 144563it [00:01, 139493.90it/s]Reading train qids: 158538it [00:01, 139112.44it/s]Reading train qids: 172794it [00:01, 140137.79it/s]Reading train qids: 186822it [00:01, 138508.45it/s]2025-06-11 14:23:20,018 [INFO]   Processed 200000 training examples
+Reading train qids: 200726it [00:01, 138662.90it/s]Reading train qids: 214885it [00:01, 139531.78it/s]Reading train qids: 228846it [00:01, 138554.23it/s]Reading train qids: 242708it [00:01, 134672.47it/s]Reading train qids: 256280it [00:01, 134972.27it/s]Reading train qids: 270526it [00:01, 137174.99it/s]Reading train qids: 284897it [00:02, 139108.20it/s]Reading train qids: 299150it [00:02, 140124.31it/s]2025-06-11 14:23:20,743 [INFO]   Processed 300000 training examples
+Reading train qids: 313174it [00:02, 136919.39it/s]Reading train qids: 326889it [00:02, 136093.25it/s]Reading train qids: 340633it [00:02, 136487.76it/s]Reading train qids: 354553it [00:02, 137288.84it/s]Reading train qids: 368960it [00:02, 139301.45it/s]Reading train qids: 382899it [00:02, 137710.28it/s]Reading train qids: 396679it [00:02, 136935.25it/s]2025-06-11 14:23:21,474 [INFO]   Processed 400000 training examples
+Reading train qids: 410379it [00:02, 136605.47it/s]Reading train qids: 425007it [00:03, 139473.21it/s]Reading train qids: 439795it [00:03, 141971.51it/s]Reading train qids: 453999it [00:03, 140930.59it/s]Reading train qids: 468098it [00:03, 139375.20it/s]Reading train qids: 482043it [00:03, 136383.07it/s]Reading train qids: 495809it [00:03, 136750.28it/s]2025-06-11 14:23:22,195 [INFO]   Processed 500000 training examples
+Reading train qids: 510114it [00:03, 138604.58it/s]Reading train qids: 523986it [00:03, 137498.06it/s]Reading train qids: 537745it [00:03, 136405.35it/s]Reading train qids: 551914it [00:03, 137962.68it/s]Reading train qids: 566412it [00:04, 140041.39it/s]Reading train qids: 580905it [00:04, 141493.75it/s]Reading train qids: 595061it [00:04, 135771.67it/s]2025-06-11 14:23:22,924 [INFO]   Processed 600000 training examples
+Reading train qids: 608743it [00:04, 136073.80it/s]Reading train qids: 622388it [00:04, 134877.61it/s]Reading train qids: 636143it [00:04, 135660.24it/s]Reading train qids: 650525it [00:04, 138064.30it/s]Reading train qids: 664350it [00:04, 136400.37it/s]Reading train qids: 678006it [00:04, 134658.95it/s]Reading train qids: 691516it [00:05, 134786.84it/s]2025-06-11 14:23:23,658 [INFO]   Processed 700000 training examples
+Reading train qids: 705895it [00:05, 137446.59it/s]Reading train qids: 720073it [00:05, 138731.61it/s]Reading train qids: 723412it [00:05, 138448.77it/s]
+2025-06-11 14:23:23,822 [INFO] Reading validation query IDs...
+Reading val qids: 0it [00:00, ?it/s]Reading val qids: 12857it [00:00, 128561.23it/s]Reading val qids: 26027it [00:00, 130403.93it/s]Reading val qids: 39990it [00:00, 134613.31it/s]Reading val qids: 53660it [00:00, 135434.46it/s]Reading val qids: 68281it [00:00, 139316.04it/s]Reading val qids: 82213it [00:00, 136753.01it/s]Reading val qids: 96032it [00:00, 137216.12it/s]2025-06-11 14:23:24,557 [INFO]   Processed 100000 validation examples
+Reading val qids: 109909it [00:00, 137703.40it/s]Reading val qids: 123685it [00:00, 136993.06it/s]Reading val qids: 137786it [00:01, 138221.99it/s]Reading val qids: 151612it [00:01, 137840.56it/s]Reading val qids: 165399it [00:01, 136001.18it/s]Reading val qids: 179436it [00:01, 137303.76it/s]Reading val qids: 193173it [00:01, 136991.74it/s]2025-06-11 14:23:25,288 [INFO]   Processed 200000 validation examples
+Reading val qids: 206877it [00:01, 135811.82it/s]Reading val qids: 220553it [00:01, 136092.52it/s]Reading val qids: 234166it [00:01, 135096.02it/s]Reading val qids: 235259it [00:01, 136263.76it/s]
+2025-06-11 14:23:25,549 [INFO] Reading test query IDs...
+Reading test qids: 0it [00:00, ?it/s]Reading test qids: 13963it [00:00, 139620.15it/s]Reading test qids: 27926it [00:00, 130168.24it/s]Reading test qids: 41926it [00:00, 134485.84it/s]Reading test qids: 55771it [00:00, 136011.47it/s]Reading test qids: 69401it [00:00, 135348.50it/s]Reading test qids: 83390it [00:00, 136870.19it/s]Reading test qids: 97091it [00:00, 136248.35it/s]2025-06-11 14:23:26,287 [INFO]   Processed 100000 test examples
+Reading test qids: 110726it [00:00, 135164.65it/s]Reading test qids: 124934it [00:00, 137298.48it/s]Reading test qids: 138672it [00:01, 135050.18it/s]Reading test qids: 152857it [00:01, 137089.13it/s]Reading test qids: 166578it [00:01, 135827.47it/s]Reading test qids: 180424it [00:01, 136610.00it/s]Reading test qids: 194176it [00:01, 136877.69it/s]2025-06-11 14:23:27,022 [INFO]   Processed 200000 test examples
+Reading test qids: 207870it [00:01, 135139.39it/s]Reading test qids: 221917it [00:01, 136719.59it/s]Reading test qids: 236677it [00:01, 139955.80it/s]Reading test qids: 241521it [00:01, 136476.15it/s]
+2025-06-11 14:23:27,343 [INFO] Training set: 6000 unique queries, 723412 examples
+2025-06-11 14:23:27,344 [INFO] Test set: 2000 unique queries, 241521 examples
+2025-06-11 14:23:27,344 [INFO] Validation set: 2000 unique queries, 235259 examples
+2025-06-11 14:23:27,344 [INFO] Computing group information for LightGBM...
+2025-06-11 14:23:27,556 [INFO] Created group information: 6000 train groups, 2000 validation groups
+2025-06-11 14:23:27,556 [INFO] Creating LightGBM datasets...
+2025-06-11 14:23:27,556 [INFO] Training LightGBM model with parameters:
+2025-06-11 14:23:27,556 [INFO]   objective: lambdarank
+2025-06-11 14:23:27,556 [INFO]   metric: ['ndcg@10']
+2025-06-11 14:23:27,556 [INFO]   boosting_type: gbdt
+2025-06-11 14:23:27,556 [INFO]   learning_rate: 0.05
+2025-06-11 14:23:27,556 [INFO]   num_leaves: 31
+2025-06-11 14:23:27,556 [INFO]   min_data_in_leaf: 20
+2025-06-11 14:23:27,556 [INFO]   max_depth: -1
+2025-06-11 14:23:27,556 [INFO]   feature_fraction: 0.9
+2025-06-11 14:23:27,556 [INFO]   bagging_fraction: 0.8
+2025-06-11 14:23:27,556 [INFO]   bagging_freq: 5
+2025-06-11 14:23:27,556 [INFO]   lambda_l1: 0.1
+2025-06-11 14:23:27,556 [INFO]   lambda_l2: 0.1
+2025-06-11 14:23:27,556 [INFO]   verbose: 1
+2025-06-11 14:23:27,556 [INFO] Training for 200 rounds...
+2025-06-11 14:23:39,212 [INFO] Training completed in 11.66 seconds
+2025-06-11 14:23:39,213 [INFO] Model saved to /workspace/mlr/lgbm/logs/run_20250611_142225/lightgbm_model_fold1.txt
+2025-06-11 14:23:39,214 [INFO] Plotting training history...
+2025-06-11 14:23:39,214 [INFO] Evaluation result keys: []
+2025-06-11 14:23:39,216 [WARNING] No evaluation results recorded
+/workspace/mlr/lgbm/lgbm_run.py:238: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+  plt.legend()
+2025-06-11 14:23:39,345 [INFO] Making Predictions on test data...
+2025-06-11 14:23:39,514 [INFO] Predictions completed in 0.17 seconds
+2025-06-11 14:23:39,515 [INFO] Computing evaluation metrics...
+2025-06-11 14:23:39,573 [INFO] Computing NDCG@10 for each query...
+[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.271821 seconds.
+You can set `force_col_wise=true` to remove the overhead.
+[LightGBM] [Info] Total Bins 25637
+[LightGBM] [Info] Number of data points in the train set: 723412, number of used features: 136
+Computing NDCG:   0%|          | 0/2000 [00:00<?, ?it/s]2025-06-11 14:23:39,596 [INFO]   Processed NDCG for 500 queries
+2025-06-11 14:23:39,614 [INFO]   Processed NDCG for 1000 queries
+2025-06-11 14:23:39,632 [INFO]   Processed NDCG for 1500 queries
+Computing NDCG: 100%|██████████| 2000/2000 [00:00<00:00, 25747.33it/s]
+2025-06-11 14:23:39,651 [INFO] Fold 1 Results:
+2025-06-11 14:23:39,651 [INFO] RMSE: 1.7720, MAE: 1.5147, R2: -3.5284, NDCG@10: 0.4825
+2025-06-11 14:23:39,651 [INFO] Plotting feature importance...
+2025-06-11 14:23:39,881 [INFO] Fold 1 completed in 74.19 seconds
+2025-06-11 14:23:39,881 [INFO] --------------------------------------------------
+2025-06-11 14:23:39,881 [INFO] Processing Fold 2...
+2025-06-11 14:23:39,881 [INFO] Loading training data from /workspace/data/raw/mslr-web/Fold2/train.txt
+2025-06-11 14:24:14,076 [INFO] Loading validation data from /workspace/data/raw/mslr-web/Fold2/vali.txt
+2025-06-11 14:24:25,458 [INFO] Loading test data from /workspace/data/raw/mslr-web/Fold2/test.txt
+2025-06-11 14:24:36,670 [INFO] Extracting query IDs...
+2025-06-11 14:24:36,674 [INFO] Reading train query IDs...
+Reading train qids: 0it [00:00, ?it/s]Reading train qids: 12803it [00:00, 128017.61it/s]Reading train qids: 25944it [00:00, 130011.12it/s]Reading train qids: 39222it [00:00, 131264.32it/s]Reading train qids: 52349it [00:00, 130803.59it/s]Reading train qids: 65430it [00:00, 130519.34it/s]Reading train qids: 78483it [00:00, 129055.32it/s]Reading train qids: 91392it [00:00, 127908.73it/s]2025-06-11 14:24:37,455 [INFO]   Processed 100000 training examples
+Reading train qids: 104186it [00:00, 125163.58it/s]Reading train qids: 116816it [00:00, 125509.41it/s]Reading train qids: 129408it [00:01, 125632.85it/s]Reading train qids: 142647it [00:01, 127675.29it/s]Reading train qids: 155872it [00:01, 129053.07it/s]Reading train qids: 168992it [00:01, 129697.97it/s]Reading train qids: 182345it [00:01, 130849.70it/s]Reading train qids: 195726it [00:01, 131737.99it/s]2025-06-11 14:24:38,222 [INFO]   Processed 200000 training examples
+Reading train qids: 208903it [00:01, 130070.71it/s]Reading train qids: 221917it [00:01, 129467.70it/s]Reading train qids: 235190it [00:01, 130435.36it/s]Reading train qids: 248238it [00:01, 130119.56it/s]Reading train qids: 261253it [00:02, 128565.37it/s]Reading train qids: 274158it [00:02, 128705.58it/s]Reading train qids: 287205it [00:02, 129227.17it/s]2025-06-11 14:24:39,002 [INFO]   Processed 300000 training examples
+Reading train qids: 300131it [00:02, 128209.21it/s]Reading train qids: 313074it [00:02, 128570.64it/s]Reading train qids: 325934it [00:02, 127581.15it/s]Reading train qids: 338696it [00:02, 127328.46it/s]Reading train qids: 351455it [00:02, 127405.10it/s]Reading train qids: 364197it [00:02, 125723.99it/s]Reading train qids: 376775it [00:02, 123085.38it/s]Reading train qids: 389097it [00:03, 118370.79it/s]2025-06-11 14:24:39,817 [INFO]   Processed 400000 training examples
+Reading train qids: 402017it [00:03, 121474.58it/s]Reading train qids: 415039it [00:03, 124014.62it/s]Reading train qids: 427877it [00:03, 125290.66it/s]Reading train qids: 440945it [00:03, 126880.85it/s]Reading train qids: 453948it [00:03, 127812.96it/s]Reading train qids: 466747it [00:03, 127615.63it/s]Reading train qids: 480236it [00:03, 129779.44it/s]Reading train qids: 493803it [00:03, 131536.12it/s]2025-06-11 14:24:40,579 [INFO]   Processed 500000 training examples
+Reading train qids: 507464it [00:03, 133052.15it/s]Reading train qids: 521004it [00:04, 133752.97it/s]Reading train qids: 534778it [00:04, 134943.27it/s]Reading train qids: 548633it [00:04, 136021.61it/s]Reading train qids: 562350it [00:04, 136362.85it/s]Reading train qids: 576127it [00:04, 136782.34it/s]Reading train qids: 589807it [00:04, 136553.56it/s]2025-06-11 14:24:41,308 [INFO]   Processed 600000 training examples
+Reading train qids: 603466it [00:04, 136563.25it/s]Reading train qids: 617123it [00:04, 133956.59it/s]Reading train qids: 630530it [00:04, 129627.74it/s]Reading train qids: 643527it [00:04, 128693.95it/s]Reading train qids: 656485it [00:05, 128950.55it/s]Reading train qids: 669397it [00:05, 128461.81it/s]Reading train qids: 682254it [00:05, 127899.90it/s]Reading train qids: 695304it [00:05, 128665.30it/s]2025-06-11 14:24:42,095 [INFO]   Processed 700000 training examples
+Reading train qids: 708307it [00:05, 129068.05it/s]Reading train qids: 716683it [00:05, 129161.06it/s]
+2025-06-11 14:24:42,225 [INFO] Reading validation query IDs...
+Reading val qids: 0it [00:00, ?it/s]Reading val qids: 12127it [00:00, 121261.44it/s]Reading val qids: 24508it [00:00, 122755.11it/s]Reading val qids: 37427it [00:00, 125687.88it/s]Reading val qids: 50023it [00:00, 125793.10it/s]Reading val qids: 63207it [00:00, 127971.85it/s]Reading val qids: 76369it [00:00, 129209.49it/s]Reading val qids: 89290it [00:00, 128927.13it/s]2025-06-11 14:24:43,007 [INFO]   Processed 100000 validation examples
+Reading val qids: 102183it [00:00, 128793.77it/s]Reading val qids: 115228it [00:00, 129308.06it/s]Reading val qids: 128159it [00:01, 127452.68it/s]Reading val qids: 141148it [00:01, 128185.01it/s]Reading val qids: 153972it [00:01, 127664.83it/s]Reading val qids: 166823it [00:01, 127916.04it/s]Reading val qids: 179618it [00:01, 126736.30it/s]Reading val qids: 192447it [00:01, 127197.92it/s]2025-06-11 14:24:43,796 [INFO]   Processed 200000 validation examples
+Reading val qids: 205170it [00:01, 127095.46it/s]Reading val qids: 218039it [00:01, 127565.01it/s]Reading val qids: 230798it [00:01, 125989.63it/s]Reading val qids: 241521it [00:01, 127436.56it/s]
+2025-06-11 14:24:44,122 [INFO] Reading test query IDs...
+Reading test qids: 0it [00:00, ?it/s]Reading test qids: 12098it [00:00, 120972.33it/s]Reading test qids: 24640it [00:00, 123584.27it/s]Reading test qids: 37803it [00:00, 127255.15it/s]Reading test qids: 50529it [00:00, 126732.03it/s]Reading test qids: 63239it [00:00, 126861.04it/s]Reading test qids: 76204it [00:00, 127805.99it/s]Reading test qids: 88985it [00:00, 127701.06it/s]2025-06-11 14:24:44,910 [INFO]   Processed 100000 test examples
+Reading test qids: 101756it [00:00, 127349.31it/s]Reading test qids: 114781it [00:00, 128251.55it/s]Reading test qids: 127607it [00:01, 127532.64it/s]Reading test qids: 140544it [00:01, 128090.45it/s]Reading test qids: 153355it [00:01, 121251.43it/s]Reading test qids: 166191it [00:01, 123316.91it/s]Reading test qids: 179973it [00:01, 127570.06it/s]Reading test qids: 193536it [00:01, 129949.17it/s]2025-06-11 14:24:45,695 [INFO]   Processed 200000 test examples
+Reading test qids: 206632it [00:01, 130242.99it/s]Reading test qids: 220166it [00:01, 131759.19it/s]Reading test qids: 233981it [00:01, 133663.57it/s]Reading test qids: 241988it [00:01, 128653.42it/s]
+2025-06-11 14:24:46,025 [INFO] Training set: 6000 unique queries, 716683 examples
+2025-06-11 14:24:46,026 [INFO] Test set: 2000 unique queries, 241988 examples
+2025-06-11 14:24:46,026 [INFO] Validation set: 2000 unique queries, 241521 examples
+2025-06-11 14:24:46,026 [INFO] Computing group information for LightGBM...
+2025-06-11 14:24:46,226 [INFO] Created group information: 6000 train groups, 2000 validation groups
+2025-06-11 14:24:46,226 [INFO] Creating LightGBM datasets...
+2025-06-11 14:24:46,275 [INFO] Training LightGBM model with parameters:
+2025-06-11 14:24:46,275 [INFO]   objective: lambdarank
+2025-06-11 14:24:46,275 [INFO]   metric: ['ndcg@10']
+2025-06-11 14:24:46,275 [INFO]   boosting_type: gbdt
+2025-06-11 14:24:46,275 [INFO]   learning_rate: 0.05
+2025-06-11 14:24:46,275 [INFO]   num_leaves: 31
+2025-06-11 14:24:46,275 [INFO]   min_data_in_leaf: 20
+2025-06-11 14:24:46,275 [INFO]   max_depth: -1
+2025-06-11 14:24:46,275 [INFO]   feature_fraction: 0.9
+2025-06-11 14:24:46,275 [INFO]   bagging_fraction: 0.8
+2025-06-11 14:24:46,275 [INFO]   bagging_freq: 5
+2025-06-11 14:24:46,275 [INFO]   lambda_l1: 0.1
+2025-06-11 14:24:46,275 [INFO]   lambda_l2: 0.1
+2025-06-11 14:24:46,275 [INFO]   verbose: 1
+2025-06-11 14:24:46,275 [INFO] Training for 200 rounds...
+2025-06-11 14:24:56,873 [INFO] Training completed in 10.60 seconds
+2025-06-11 14:24:56,874 [INFO] Model saved to /workspace/mlr/lgbm/logs/run_20250611_142225/lightgbm_model_fold2.txt
+2025-06-11 14:24:56,874 [INFO] Plotting training history...
+2025-06-11 14:24:56,874 [INFO] Evaluation result keys: []
+2025-06-11 14:24:56,875 [WARNING] No evaluation results recorded
+/workspace/mlr/lgbm/lgbm_run.py:238: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+  plt.legend()
+2025-06-11 14:24:56,974 [INFO] Making Predictions on test data...
+2025-06-11 14:24:57,131 [INFO] Predictions completed in 0.16 seconds
+2025-06-11 14:24:57,132 [INFO] Computing evaluation metrics...
+2025-06-11 14:24:57,188 [INFO] Computing NDCG@10 for each query...
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.086932 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 25623
+[LightGBM] [Info] Number of data points in the train set: 716683, number of used features: 136
+Computing NDCG:   0%|          | 0/2000 [00:00<?, ?it/s]2025-06-11 14:24:57,206 [INFO]   Processed NDCG for 500 queries
+2025-06-11 14:24:57,224 [INFO]   Processed NDCG for 1000 queries
+2025-06-11 14:24:57,242 [INFO]   Processed NDCG for 1500 queries
+Computing NDCG: 100%|██████████| 2000/2000 [00:00<00:00, 27697.06it/s]
+2025-06-11 14:24:57,260 [INFO] Fold 2 Results:
+2025-06-11 14:24:57,261 [INFO] RMSE: 1.7609, MAE: 1.5082, R2: -3.6518, NDCG@10: 0.4791
+2025-06-11 14:24:57,261 [INFO] Plotting feature importance...
+2025-06-11 14:24:57,492 [INFO] Fold 2 completed in 77.61 seconds
+2025-06-11 14:24:57,492 [INFO] --------------------------------------------------
+2025-06-11 14:24:57,492 [INFO] Processing Fold 3...
+2025-06-11 14:24:57,492 [INFO] Loading training data from /workspace/data/raw/mslr-web/Fold3/train.txt
+2025-06-11 14:25:31,412 [INFO] Loading validation data from /workspace/data/raw/mslr-web/Fold3/vali.txt
+2025-06-11 14:25:42,687 [INFO] Loading test data from /workspace/data/raw/mslr-web/Fold3/test.txt
+2025-06-11 14:25:53,652 [INFO] Extracting query IDs...
+2025-06-11 14:25:53,657 [INFO] Reading train query IDs...
+Reading train qids: 0it [00:00, ?it/s]Reading train qids: 13570it [00:00, 135690.75it/s]Reading train qids: 27532it [00:00, 137995.89it/s]Reading train qids: 41429it [00:00, 138436.97it/s]Reading train qids: 55273it [00:00, 137544.05it/s]Reading train qids: 69029it [00:00, 137008.35it/s]Reading train qids: 83037it [00:00, 138043.72it/s]Reading train qids: 97085it [00:00, 138835.52it/s]2025-06-11 14:25:54,380 [INFO]   Processed 100000 training examples
+Reading train qids: 111114it [00:00, 139296.19it/s]Reading train qids: 125045it [00:00, 138972.75it/s]Reading train qids: 139055it [00:01, 139318.18it/s]Reading train qids: 153019it [00:01, 139415.10it/s]Reading train qids: 166968it [00:01, 139437.09it/s]Reading train qids: 180912it [00:01, 139310.75it/s]Reading train qids: 195017it [00:01, 139833.13it/s]2025-06-11 14:25:55,097 [INFO]   Processed 200000 training examples
+Reading train qids: 209001it [00:01, 139748.64it/s]Reading train qids: 223022it [00:01, 139884.80it/s]Reading train qids: 237035it [00:01, 139957.61it/s]Reading train qids: 251031it [00:01, 139308.10it/s]Reading train qids: 264963it [00:01, 139076.43it/s]Reading train qids: 278899it [00:02, 139156.13it/s]Reading train qids: 292816it [00:02, 139046.49it/s]2025-06-11 14:25:55,815 [INFO]   Processed 300000 training examples
+Reading train qids: 306769it [00:02, 139187.81it/s]Reading train qids: 320729it [00:02, 139309.54it/s]Reading train qids: 334720it [00:02, 139486.05it/s]Reading train qids: 348669it [00:02, 137795.85it/s]Reading train qids: 362588it [00:02, 138209.28it/s]Reading train qids: 376737it [00:02, 139185.02it/s]Reading train qids: 390711it [00:02, 139350.12it/s]2025-06-11 14:25:56,536 [INFO]   Processed 400000 training examples
+Reading train qids: 404649it [00:02, 138682.44it/s]Reading train qids: 418554it [00:03, 138786.21it/s]Reading train qids: 432616it [00:03, 139332.32it/s]Reading train qids: 446577it [00:03, 139414.84it/s]Reading train qids: 460600it [00:03, 139657.36it/s]Reading train qids: 474624it [00:03, 139825.26it/s]Reading train qids: 488608it [00:03, 139798.05it/s]2025-06-11 14:25:57,252 [INFO]   Processed 500000 training examples
+Reading train qids: 502589it [00:03, 139162.40it/s]Reading train qids: 516507it [00:03, 137397.17it/s]Reading train qids: 530573it [00:03, 138362.36it/s]Reading train qids: 544711it [00:03, 139258.04it/s]Reading train qids: 558774it [00:04, 139661.05it/s]Reading train qids: 572744it [00:04, 139421.26it/s]Reading train qids: 586758it [00:04, 139634.84it/s]2025-06-11 14:25:57,970 [INFO]   Processed 600000 training examples
+Reading train qids: 600778it [00:04, 139801.25it/s]Reading train qids: 614760it [00:04, 139706.18it/s]Reading train qids: 628732it [00:04, 138963.95it/s]Reading train qids: 642630it [00:04, 138283.98it/s]Reading train qids: 656712it [00:04, 139033.76it/s]Reading train qids: 670798it [00:04, 139572.40it/s]Reading train qids: 684757it [00:04, 139154.59it/s]Reading train qids: 698694it [00:05, 139216.38it/s]2025-06-11 14:25:58,690 [INFO]   Processed 700000 training examples
+Reading train qids: 712617it [00:05, 139048.40it/s]Reading train qids: 719111it [00:05, 139085.56it/s]
+2025-06-11 14:25:58,829 [INFO] Reading validation query IDs...
+Reading val qids: 0it [00:00, ?it/s]Reading val qids: 13698it [00:00, 136970.66it/s]Reading val qids: 27570it [00:00, 137997.60it/s]Reading val qids: 41557it [00:00, 138844.46it/s]Reading val qids: 55503it [00:00, 139084.76it/s]Reading val qids: 69572it [00:00, 139662.80it/s]Reading val qids: 83662it [00:00, 140080.30it/s]Reading val qids: 97671it [00:00, 139564.10it/s]2025-06-11 14:25:59,547 [INFO]   Processed 100000 validation examples
+Reading val qids: 111628it [00:00, 139361.54it/s]Reading val qids: 125565it [00:00, 139178.43it/s]Reading val qids: 139609it [00:01, 139564.38it/s]Reading val qids: 153566it [00:01, 139537.89it/s]Reading val qids: 167520it [00:01, 137612.38it/s]Reading val qids: 181532it [00:01, 138362.34it/s]Reading val qids: 195532it [00:01, 138850.34it/s]2025-06-11 14:26:00,271 [INFO]   Processed 200000 validation examples
+Reading val qids: 209421it [00:01, 136911.62it/s]Reading val qids: 223168it [00:01, 137075.32it/s]Reading val qids: 237034it [00:01, 137545.68it/s]Reading val qids: 241988it [00:01, 138500.25it/s]
+2025-06-11 14:26:00,578 [INFO] Reading test query IDs...
+Reading test qids: 0it [00:00, ?it/s]Reading test qids: 13692it [00:00, 136914.25it/s]Reading test qids: 27580it [00:00, 138068.12it/s]Reading test qids: 41469it [00:00, 138440.59it/s]Reading test qids: 55411it [00:00, 138821.42it/s]Reading test qids: 69491it [00:00, 139533.37it/s]Reading test qids: 83445it [00:00, 138804.88it/s]Reading test qids: 97327it [00:00, 138493.18it/s]2025-06-11 14:26:01,300 [INFO]   Processed 100000 test examples
+Reading test qids: 111181it [00:00, 138505.35it/s]Reading test qids: 125163it [00:00, 138912.04it/s]Reading test qids: 139194it [00:01, 139340.27it/s]Reading test qids: 153129it [00:01, 139227.32it/s]Reading test qids: 167052it [00:01, 139197.43it/s]Reading test qids: 180972it [00:01, 138902.25it/s]Reading test qids: 195090it [00:01, 139587.88it/s]2025-06-11 14:26:02,017 [INFO]   Processed 200000 test examples
+Reading test qids: 209050it [00:01, 139323.06it/s]Reading test qids: 222983it [00:01, 139227.91it/s]Reading test qids: 236936it [00:01, 139316.29it/s]Reading test qids: 239093it [00:01, 138989.58it/s]
+2025-06-11 14:26:02,324 [INFO] Training set: 6000 unique queries, 719111 examples
+2025-06-11 14:26:02,324 [INFO] Test set: 2000 unique queries, 239093 examples
+2025-06-11 14:26:02,324 [INFO] Validation set: 2000 unique queries, 241988 examples
+2025-06-11 14:26:02,324 [INFO] Computing group information for LightGBM...
+2025-06-11 14:26:02,529 [INFO] Created group information: 6000 train groups, 2000 validation groups
+2025-06-11 14:26:02,529 [INFO] Creating LightGBM datasets...
+2025-06-11 14:26:02,568 [INFO] Training LightGBM model with parameters:
+2025-06-11 14:26:02,569 [INFO]   objective: lambdarank
+2025-06-11 14:26:02,569 [INFO]   metric: ['ndcg@10']
+2025-06-11 14:26:02,569 [INFO]   boosting_type: gbdt
+2025-06-11 14:26:02,569 [INFO]   learning_rate: 0.05
+2025-06-11 14:26:02,569 [INFO]   num_leaves: 31
+2025-06-11 14:26:02,569 [INFO]   min_data_in_leaf: 20
+2025-06-11 14:26:02,569 [INFO]   max_depth: -1
+2025-06-11 14:26:02,569 [INFO]   feature_fraction: 0.9
+2025-06-11 14:26:02,569 [INFO]   bagging_fraction: 0.8
+2025-06-11 14:26:02,569 [INFO]   bagging_freq: 5
+2025-06-11 14:26:02,569 [INFO]   lambda_l1: 0.1
+2025-06-11 14:26:02,569 [INFO]   lambda_l2: 0.1
+2025-06-11 14:26:02,569 [INFO]   verbose: 1
+2025-06-11 14:26:02,569 [INFO] Training for 200 rounds...
+2025-06-11 14:26:12,879 [INFO] Training completed in 10.31 seconds
+2025-06-11 14:26:12,881 [INFO] Model saved to /workspace/mlr/lgbm/logs/run_20250611_142225/lightgbm_model_fold3.txt
+2025-06-11 14:26:12,881 [INFO] Plotting training history...
+2025-06-11 14:26:12,881 [INFO] Evaluation result keys: []
+2025-06-11 14:26:12,882 [WARNING] No evaluation results recorded
+/workspace/mlr/lgbm/lgbm_run.py:238: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+  plt.legend()
+2025-06-11 14:26:12,974 [INFO] Making Predictions on test data...
+2025-06-11 14:26:13,130 [INFO] Predictions completed in 0.16 seconds
+2025-06-11 14:26:13,130 [INFO] Computing evaluation metrics...
+2025-06-11 14:26:13,187 [INFO] Computing NDCG@10 for each query...
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.068069 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 25659
+[LightGBM] [Info] Number of data points in the train set: 719111, number of used features: 136
+Computing NDCG:   0%|          | 0/2000 [00:00<?, ?it/s]2025-06-11 14:26:13,205 [INFO]   Processed NDCG for 500 queries
+2025-06-11 14:26:13,223 [INFO]   Processed NDCG for 1000 queries
+2025-06-11 14:26:13,241 [INFO]   Processed NDCG for 1500 queries
+Computing NDCG: 100%|██████████| 2000/2000 [00:00<00:00, 27702.00it/s]
+2025-06-11 14:26:13,259 [INFO] Fold 3 Results:
+2025-06-11 14:26:13,259 [INFO] RMSE: 1.7750, MAE: 1.5304, R2: -3.6262, NDCG@10: 0.4783
+2025-06-11 14:26:13,259 [INFO] Plotting feature importance...
+2025-06-11 14:26:13,483 [INFO] Fold 3 completed in 75.99 seconds
+2025-06-11 14:26:13,483 [INFO] --------------------------------------------------
+2025-06-11 14:26:13,483 [INFO] Processing Fold 4...
+2025-06-11 14:26:13,483 [INFO] Loading training data from /workspace/data/raw/mslr-web/Fold4/train.txt
+2025-06-11 14:26:47,093 [INFO] Loading validation data from /workspace/data/raw/mslr-web/Fold4/vali.txt
+2025-06-11 14:26:58,448 [INFO] Loading test data from /workspace/data/raw/mslr-web/Fold4/test.txt
+2025-06-11 14:27:10,067 [INFO] Extracting query IDs...
+2025-06-11 14:27:10,072 [INFO] Reading train query IDs...
+Reading train qids: 0it [00:00, ?it/s]Reading train qids: 13672it [00:00, 136707.09it/s]Reading train qids: 27827it [00:00, 139542.52it/s]Reading train qids: 41927it [00:00, 140203.32it/s]Reading train qids: 55988it [00:00, 140361.14it/s]Reading train qids: 70025it [00:00, 139555.02it/s]Reading train qids: 84111it [00:00, 139995.70it/s]Reading train qids: 98211it [00:00, 140319.18it/s]2025-06-11 14:27:10,787 [INFO]   Processed 100000 training examples
+Reading train qids: 112304it [00:00, 140510.03it/s]Reading train qids: 126570it [00:00, 141178.72it/s]Reading train qids: 140760it [00:01, 141399.89it/s]Reading train qids: 154901it [00:01, 141044.57it/s]Reading train qids: 169006it [00:01, 140804.96it/s]Reading train qids: 183163it [00:01, 141035.01it/s]Reading train qids: 197408it [00:01, 141460.00it/s]2025-06-11 14:27:11,493 [INFO]   Processed 200000 training examples
+Reading train qids: 211609it [00:01, 141624.49it/s]Reading train qids: 225834it [00:01, 141809.89it/s]Reading train qids: 240016it [00:01, 141497.99it/s]Reading train qids: 254167it [00:01, 141258.84it/s]Reading train qids: 268294it [00:01, 140893.43it/s]Reading train qids: 282384it [00:02, 140771.34it/s]Reading train qids: 296736it [00:02, 141590.59it/s]2025-06-11 14:27:12,201 [INFO]   Processed 300000 training examples
+Reading train qids: 310896it [00:02, 141306.13it/s]Reading train qids: 325101it [00:02, 141528.12it/s]Reading train qids: 339255it [00:02, 141351.29it/s]Reading train qids: 353391it [00:02, 140937.03it/s]Reading train qids: 367486it [00:02, 140721.52it/s]Reading train qids: 381561it [00:02, 140729.27it/s]Reading train qids: 395637it [00:02, 140737.50it/s]2025-06-11 14:27:12,911 [INFO]   Processed 400000 training examples
+Reading train qids: 409810it [00:02, 141032.04it/s]Reading train qids: 423942it [00:03, 141115.74it/s]Reading train qids: 438343it [00:03, 141981.65it/s]Reading train qids: 452542it [00:03, 141284.33it/s]Reading train qids: 466722it [00:03, 141437.77it/s]Reading train qids: 480867it [00:03, 141376.12it/s]Reading train qids: 495011it [00:03, 141394.07it/s]2025-06-11 14:27:13,618 [INFO]   Processed 500000 training examples
+Reading train qids: 509165it [00:03, 141431.46it/s]Reading train qids: 523309it [00:03, 141084.39it/s]Reading train qids: 537576it [00:03, 141557.50it/s]Reading train qids: 551828it [00:03, 141843.55it/s]Reading train qids: 566113it [00:04, 142142.71it/s]Reading train qids: 580328it [00:04, 141705.34it/s]Reading train qids: 594499it [00:04, 141058.24it/s]2025-06-11 14:27:14,324 [INFO]   Processed 600000 training examples
+Reading train qids: 608756it [00:04, 141503.32it/s]Reading train qids: 622909it [00:04, 141510.43it/s]Reading train qids: 637167it [00:04, 141828.50it/s]Reading train qids: 651351it [00:04, 139203.11it/s]Reading train qids: 665330it [00:04, 139372.18it/s]Reading train qids: 679661it [00:04, 140539.08it/s]Reading train qids: 693809it [00:04, 140815.69it/s]2025-06-11 14:27:15,037 [INFO]   Processed 700000 training examples
+Reading train qids: 707899it [00:05, 140839.80it/s]Reading train qids: 718768it [00:05, 141044.07it/s]
+2025-06-11 14:27:15,170 [INFO] Reading validation query IDs...
+Reading val qids: 0it [00:00, ?it/s]Reading val qids: 13861it [00:00, 138601.54it/s]Reading val qids: 28072it [00:00, 140660.44it/s]Reading val qids: 42146it [00:00, 140692.23it/s]Reading val qids: 56322it [00:00, 141110.36it/s]Reading val qids: 70574it [00:00, 141615.30it/s]Reading val qids: 84736it [00:00, 141033.00it/s]Reading val qids: 98840it [00:00, 140952.72it/s]2025-06-11 14:27:15,880 [INFO]   Processed 100000 validation examples
+Reading val qids: 113013it [00:00, 141197.29it/s]Reading val qids: 127176it [00:00, 141329.12it/s]Reading val qids: 141419it [00:01, 141664.48it/s]Reading val qids: 155586it [00:01, 141518.15it/s]Reading val qids: 169738it [00:01, 141426.86it/s]Reading val qids: 183995it [00:01, 141769.87it/s]Reading val qids: 198391it [00:01, 142428.96it/s]2025-06-11 14:27:16,584 [INFO]   Processed 200000 validation examples
+Reading val qids: 212635it [00:01, 142168.49it/s]Reading val qids: 226853it [00:01, 141033.25it/s]Reading val qids: 239093it [00:01, 141246.51it/s]
+2025-06-11 14:27:16,865 [INFO] Reading test query IDs...
+Reading test qids: 0it [00:00, ?it/s]Reading test qids: 13716it [00:00, 137155.23it/s]Reading test qids: 27719it [00:00, 138841.26it/s]Reading test qids: 41746it [00:00, 139491.72it/s]Reading test qids: 55697it [00:00, 139497.15it/s]Reading test qids: 69912it [00:00, 140449.71it/s]Reading test qids: 84013it [00:00, 140637.51it/s]Reading test qids: 98134it [00:00, 140823.61it/s]2025-06-11 14:27:17,578 [INFO]   Processed 100000 test examples
+Reading test qids: 112272it [00:00, 140996.50it/s]Reading test qids: 126372it [00:00, 140937.23it/s]Reading test qids: 140563it [00:01, 141231.15it/s]Reading test qids: 154687it [00:01, 141091.35it/s]Reading test qids: 168797it [00:01, 140681.75it/s]Reading test qids: 182866it [00:01, 140580.59it/s]Reading test qids: 196925it [00:01, 140546.61it/s]2025-06-11 14:27:18,288 [INFO]   Processed 200000 test examples
+Reading test qids: 211056it [00:01, 140774.92it/s]Reading test qids: 225172it [00:01, 140889.91it/s]Reading test qids: 239262it [00:01, 140401.32it/s]Reading test qids: 242331it [00:01, 140478.60it/s]
+2025-06-11 14:27:18,614 [INFO] Training set: 6000 unique queries, 718768 examples
+2025-06-11 14:27:18,614 [INFO] Test set: 2000 unique queries, 242331 examples
+2025-06-11 14:27:18,614 [INFO] Validation set: 2000 unique queries, 239093 examples
+2025-06-11 14:27:18,614 [INFO] Computing group information for LightGBM...
+2025-06-11 14:27:18,816 [INFO] Created group information: 6000 train groups, 2000 validation groups
+2025-06-11 14:27:18,816 [INFO] Creating LightGBM datasets...
+2025-06-11 14:27:18,870 [INFO] Training LightGBM model with parameters:
+2025-06-11 14:27:18,870 [INFO]   objective: lambdarank
+2025-06-11 14:27:18,870 [INFO]   metric: ['ndcg@10']
+2025-06-11 14:27:18,870 [INFO]   boosting_type: gbdt
+2025-06-11 14:27:18,871 [INFO]   learning_rate: 0.05
+2025-06-11 14:27:18,871 [INFO]   num_leaves: 31
+2025-06-11 14:27:18,871 [INFO]   min_data_in_leaf: 20
+2025-06-11 14:27:18,871 [INFO]   max_depth: -1
+2025-06-11 14:27:18,871 [INFO]   feature_fraction: 0.9
+2025-06-11 14:27:18,871 [INFO]   bagging_fraction: 0.8
+2025-06-11 14:27:18,871 [INFO]   bagging_freq: 5
+2025-06-11 14:27:18,871 [INFO]   lambda_l1: 0.1
+2025-06-11 14:27:18,871 [INFO]   lambda_l2: 0.1
+2025-06-11 14:27:18,871 [INFO]   verbose: 1
+2025-06-11 14:27:18,871 [INFO] Training for 200 rounds...
+2025-06-11 14:27:29,337 [INFO] Training completed in 10.47 seconds
+2025-06-11 14:27:29,339 [INFO] Model saved to /workspace/mlr/lgbm/logs/run_20250611_142225/lightgbm_model_fold4.txt
+2025-06-11 14:27:29,339 [INFO] Plotting training history...
+2025-06-11 14:27:29,339 [INFO] Evaluation result keys: []
+2025-06-11 14:27:29,340 [WARNING] No evaluation results recorded
+/workspace/mlr/lgbm/lgbm_run.py:238: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+  plt.legend()
+2025-06-11 14:27:29,447 [INFO] Making Predictions on test data...
+2025-06-11 14:27:29,605 [INFO] Predictions completed in 0.16 seconds
+2025-06-11 14:27:29,605 [INFO] Computing evaluation metrics...
+2025-06-11 14:27:29,661 [INFO] Computing NDCG@10 for each query...
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.067655 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 25631
+[LightGBM] [Info] Number of data points in the train set: 718768, number of used features: 136
+Computing NDCG:   0%|          | 0/2000 [00:00<?, ?it/s]2025-06-11 14:27:29,679 [INFO]   Processed NDCG for 500 queries
+2025-06-11 14:27:29,697 [INFO]   Processed NDCG for 1000 queries
+2025-06-11 14:27:29,716 [INFO]   Processed NDCG for 1500 queries
+Computing NDCG: 100%|██████████| 2000/2000 [00:00<00:00, 27611.09it/s]
+2025-06-11 14:27:29,734 [INFO] Fold 4 Results:
+2025-06-11 14:27:29,734 [INFO] RMSE: 1.7405, MAE: 1.4890, R2: -3.4546, NDCG@10: 0.4881
+2025-06-11 14:27:29,734 [INFO] Plotting feature importance...
+2025-06-11 14:27:30,007 [INFO] Fold 4 completed in 76.52 seconds
+2025-06-11 14:27:30,007 [INFO] --------------------------------------------------
+2025-06-11 14:27:30,007 [INFO] Processing Fold 5...
+2025-06-11 14:27:30,007 [INFO] Loading training data from /workspace/data/raw/mslr-web/Fold5/train.txt
+2025-06-11 14:28:03,827 [INFO] Loading validation data from /workspace/data/raw/mslr-web/Fold5/vali.txt
+2025-06-11 14:28:15,160 [INFO] Loading test data from /workspace/data/raw/mslr-web/Fold5/test.txt
+2025-06-11 14:28:26,005 [INFO] Extracting query IDs...
+2025-06-11 14:28:26,010 [INFO] Reading train query IDs...
+Reading train qids: 0it [00:00, ?it/s]Reading train qids: 13575it [00:00, 135743.01it/s]Reading train qids: 27150it [00:00, 135367.70it/s]Reading train qids: 40965it [00:00, 136632.70it/s]Reading train qids: 54979it [00:00, 138010.90it/s]Reading train qids: 68998it [00:00, 138791.84it/s]Reading train qids: 82967it [00:00, 139093.97it/s]Reading train qids: 96877it [00:00, 139020.05it/s]2025-06-11 14:28:26,733 [INFO]   Processed 100000 training examples
+Reading train qids: 110780it [00:00, 138815.08it/s]Reading train qids: 124677it [00:00, 138859.14it/s]Reading train qids: 138585it [00:01, 138922.50it/s]Reading train qids: 152486it [00:01, 138947.07it/s]Reading train qids: 166381it [00:01, 137475.24it/s]Reading train qids: 180237it [00:01, 137799.56it/s]Reading train qids: 194243it [00:01, 138477.56it/s]2025-06-11 14:28:27,456 [INFO]   Processed 200000 training examples
+Reading train qids: 208259it [00:01, 138980.31it/s]Reading train qids: 222208it [00:01, 139129.28it/s]Reading train qids: 236204it [00:01, 139377.24it/s]Reading train qids: 250155it [00:01, 139415.33it/s]Reading train qids: 264098it [00:01, 139388.46it/s]Reading train qids: 278038it [00:02, 139221.48it/s]Reading train qids: 291961it [00:02, 139097.34it/s]2025-06-11 14:28:28,173 [INFO]   Processed 300000 training examples
+Reading train qids: 305974it [00:02, 139399.92it/s]Reading train qids: 320129it [00:02, 140043.50it/s]Reading train qids: 334134it [00:02, 139998.35it/s]Reading train qids: 348134it [00:02, 139822.69it/s]Reading train qids: 362121it [00:02, 139833.91it/s]Reading train qids: 376141it [00:02, 139941.27it/s]Reading train qids: 390230it [00:02, 140224.33it/s]2025-06-11 14:28:28,887 [INFO]   Processed 400000 training examples
+Reading train qids: 404253it [00:02, 139872.09it/s]Reading train qids: 418267it [00:03, 139951.23it/s]Reading train qids: 432305it [00:03, 140077.01it/s]Reading train qids: 446387it [00:03, 140298.01it/s]Reading train qids: 460417it [00:03, 138473.44it/s]Reading train qids: 474339it [00:03, 138693.32it/s]Reading train qids: 488324it [00:03, 139034.94it/s]2025-06-11 14:28:29,606 [INFO]   Processed 500000 training examples
+Reading train qids: 502239it [00:03, 139067.75it/s]Reading train qids: 516289it [00:03, 139494.83it/s]Reading train qids: 530241it [00:03, 139133.08it/s]Reading train qids: 544156it [00:03, 138206.60it/s]Reading train qids: 558262it [00:04, 139053.48it/s]Reading train qids: 572186it [00:04, 139105.73it/s]Reading train qids: 586099it [00:04, 138760.55it/s]Reading train qids: 599977it [00:04, 138551.68it/s]2025-06-11 14:28:30,327 [INFO]   Processed 600000 training examples
+Reading train qids: 613942it [00:04, 138878.09it/s]Reading train qids: 628021it [00:04, 139447.28it/s]Reading train qids: 642081it [00:04, 139789.55it/s]Reading train qids: 656061it [00:04, 139490.54it/s]Reading train qids: 670238it [00:04, 140170.10it/s]Reading train qids: 684256it [00:04, 139306.29it/s]Reading train qids: 698238it [00:05, 139458.69it/s]2025-06-11 14:28:31,042 [INFO]   Processed 700000 training examples
+Reading train qids: 712185it [00:05, 139214.64it/s]Reading train qids: 722602it [00:05, 139066.59it/s]
+2025-06-11 14:28:31,208 [INFO] Reading validation query IDs...
+Reading val qids: 0it [00:00, ?it/s]Reading val qids: 13178it [00:00, 131773.53it/s]Reading val qids: 26501it [00:00, 132627.54it/s]Reading val qids: 40528it [00:00, 136112.34it/s]Reading val qids: 54401it [00:00, 137143.71it/s]Reading val qids: 68515it [00:00, 138580.99it/s]Reading val qids: 82501it [00:00, 139014.87it/s]Reading val qids: 96469it [00:00, 139229.97it/s]2025-06-11 14:28:31,934 [INFO]   Processed 100000 validation examples
+Reading val qids: 110392it [00:00, 138926.66it/s]Reading val qids: 124475it [00:00, 139515.72it/s]Reading val qids: 138593it [00:01, 140027.05it/s]Reading val qids: 152596it [00:01, 139934.43it/s]Reading val qids: 166590it [00:01, 139830.19it/s]Reading val qids: 180574it [00:01, 139315.13it/s]Reading val qids: 194586it [00:01, 139550.53it/s]2025-06-11 14:28:32,650 [INFO]   Processed 200000 validation examples
+Reading val qids: 208563it [00:01, 139614.86it/s]Reading val qids: 222525it [00:01, 139577.55it/s]Reading val qids: 236555it [00:01, 139793.03it/s]Reading val qids: 242331it [00:01, 138879.33it/s]
+2025-06-11 14:28:32,955 [INFO] Reading test query IDs...
+Reading test qids: 0it [00:00, ?it/s]Reading test qids: 13469it [00:00, 134680.17it/s]Reading test qids: 27259it [00:00, 136570.57it/s]Reading test qids: 41050it [00:00, 137178.49it/s]Reading test qids: 54855it [00:00, 137519.61it/s]Reading test qids: 68607it [00:00, 137077.40it/s]Reading test qids: 82315it [00:00, 137056.48it/s]Reading test qids: 96168it [00:00, 137534.29it/s]2025-06-11 14:28:33,684 [INFO]   Processed 100000 test examples
+Reading test qids: 109922it [00:00, 137418.94it/s]Reading test qids: 123695it [00:00, 137514.45it/s]Reading test qids: 137860it [00:01, 138788.21it/s]Reading test qids: 151765it [00:01, 138867.61it/s]Reading test qids: 165729it [00:01, 139101.30it/s]Reading test qids: 179640it [00:01, 138914.61it/s]Reading test qids: 193689it [00:01, 139388.53it/s]2025-06-11 14:28:34,403 [INFO]   Processed 200000 test examples
+Reading test qids: 207628it [00:01, 139334.79it/s]Reading test qids: 221562it [00:01, 139197.06it/s]Reading test qids: 235259it [00:01, 138340.65it/s]
+2025-06-11 14:28:34,680 [INFO] Training set: 6000 unique queries, 722602 examples
+2025-06-11 14:28:34,680 [INFO] Test set: 2000 unique queries, 235259 examples
+2025-06-11 14:28:34,680 [INFO] Validation set: 2000 unique queries, 242331 examples
+2025-06-11 14:28:34,680 [INFO] Computing group information for LightGBM...
+2025-06-11 14:28:34,888 [INFO] Created group information: 6000 train groups, 2000 validation groups
+2025-06-11 14:28:34,888 [INFO] Creating LightGBM datasets...
+2025-06-11 14:28:34,936 [INFO] Training LightGBM model with parameters:
+2025-06-11 14:28:34,936 [INFO]   objective: lambdarank
+2025-06-11 14:28:34,936 [INFO]   metric: ['ndcg@10']
+2025-06-11 14:28:34,936 [INFO]   boosting_type: gbdt
+2025-06-11 14:28:34,936 [INFO]   learning_rate: 0.05
+2025-06-11 14:28:34,936 [INFO]   num_leaves: 31
+2025-06-11 14:28:34,936 [INFO]   min_data_in_leaf: 20
+2025-06-11 14:28:34,936 [INFO]   max_depth: -1
+2025-06-11 14:28:34,936 [INFO]   feature_fraction: 0.9
+2025-06-11 14:28:34,936 [INFO]   bagging_fraction: 0.8
+2025-06-11 14:28:34,936 [INFO]   bagging_freq: 5
+2025-06-11 14:28:34,936 [INFO]   lambda_l1: 0.1
+2025-06-11 14:28:34,936 [INFO]   lambda_l2: 0.1
+2025-06-11 14:28:34,936 [INFO]   verbose: 1
+2025-06-11 14:28:34,936 [INFO] Training for 200 rounds...
+2025-06-11 14:28:45,424 [INFO] Training completed in 10.49 seconds
+2025-06-11 14:28:45,426 [INFO] Model saved to /workspace/mlr/lgbm/logs/run_20250611_142225/lightgbm_model_fold5.txt
+2025-06-11 14:28:45,426 [INFO] Plotting training history...
+2025-06-11 14:28:45,427 [INFO] Evaluation result keys: []
+2025-06-11 14:28:45,427 [WARNING] No evaluation results recorded
+/workspace/mlr/lgbm/lgbm_run.py:238: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+  plt.legend()
+2025-06-11 14:28:45,528 [INFO] Making Predictions on test data...
+2025-06-11 14:28:45,683 [INFO] Predictions completed in 0.16 seconds
+2025-06-11 14:28:45,683 [INFO] Computing evaluation metrics...
+2025-06-11 14:28:45,737 [INFO] Computing NDCG@10 for each query...
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.065494 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 25501
+[LightGBM] [Info] Number of data points in the train set: 722602, number of used features: 136
+Computing NDCG:   0%|          | 0/2000 [00:00<?, ?it/s]2025-06-11 14:28:45,755 [INFO]   Processed NDCG for 500 queries
+2025-06-11 14:28:45,773 [INFO]   Processed NDCG for 1000 queries
+2025-06-11 14:28:45,792 [INFO]   Processed NDCG for 1500 queries
+Computing NDCG: 100%|██████████| 2000/2000 [00:00<00:00, 27670.75it/s]
+2025-06-11 14:28:45,810 [INFO] Fold 5 Results:
+2025-06-11 14:28:45,810 [INFO] RMSE: 1.7444, MAE: 1.4959, R2: -3.4168, NDCG@10: 0.4935
+2025-06-11 14:28:45,810 [INFO] Plotting feature importance...
+2025-06-11 14:28:46,028 [INFO] Fold 5 completed in 76.02 seconds
+2025-06-11 14:28:46,028 [INFO] --------------------------------------------------
+2025-06-11 14:28:46,028 [INFO] 
+Average Results Across All Folds:
+2025-06-11 14:28:46,028 [INFO]   Average rmse: 1.7586 ± 0.0140
+2025-06-11 14:28:46,029 [INFO]   Average mae: 1.5076 ± 0.0145
+2025-06-11 14:28:46,029 [INFO]   Average r2: -3.5355 ± 0.0921
+2025-06-11 14:28:46,029 [INFO]   Average ndcg@10: 0.4843 ± 0.0058
+2025-06-11 14:28:46,029 [INFO] Creating final results visualization...
+/workspace/mlr/lgbm/lgbm_run.py:350: UserWarning: Tight layout not applied. The bottom and top margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+2025-06-11 14:28:46,146 [INFO] Saving results to CSV...
+2025-06-11 14:28:46,147 [INFO] Total execution time: 380.46 seconds (6.34 minutes)
+2025-06-11 14:28:46,147 [INFO] All results saved to /workspace/mlr/lgbm/logs/run_20250611_142225
+2025-06-11 14:28:46,147 [INFO] Finished
