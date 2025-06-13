@@ -1,0 +1,9 @@
+Best value: 0.5081
+Best params:
+  num_leaves: 239
+  learning_rate: 0.038054395619039415
+  feature_fraction: 0.6223597094305492
+  bagging_fraction: 0.902323321146222
+  min_child_samples: 62
+  reg_lambda: 1.5006291342706868
+  max_depth: 12

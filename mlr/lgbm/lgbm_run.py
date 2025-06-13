@@ -103,20 +103,29 @@ def load_data(fold_num=1):
 
 def get_fixed_params():
     """固定のハイパーパラメータを返す関数"""
+    # Optunaでやったやつ。
+    # Best parameters:
+    # num_leaves: 239
+    # learning_rate: 0.038054395619039415
+    # feature_fraction: 0.6223597094305492
+    # bagging_fraction: 0.902323321146222
+    # min_child_samples: 62
+    # reg_lambda: 1.5006291342706868
+    # max_depth: 12
     params = {
         'objective': 'lambdarank',
         'metric': 'ndcg',
         'ndcg_eval_at': [3, 5, 10],
         'boosting_type': 'gbdt',
-        'num_leaves': 64,
-        'learning_rate': 0.1,
-        'feature_fraction': 0.8,
-        'bagging_fraction': 0.8,
+        'num_leaves': 239,
+        'learning_rate': 0.038054395619039415,
+        'feature_fraction': 0.6223597094305492,
+        'bagging_fraction': 0.902323321146222,
         'bagging_freq': 1,
-        'min_child_samples': 20,
+        'min_child_samples': 62,
         'reg_alpha': 0.0,
-        'reg_lambda': 1.0,
-        'max_depth': 7,
+        'reg_lambda': 1.5006291342706868,
+        'max_depth': 12,
         'verbosity': -1,
         'num_threads': -1
     }
