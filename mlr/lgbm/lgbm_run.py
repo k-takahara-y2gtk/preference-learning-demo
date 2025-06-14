@@ -114,7 +114,7 @@ def get_fixed_params():
     # max_depth: 12
     params = {
         'objective': 'lambdarank',
-        'metric': 'ndcg',
+        'metric': ['ndcg', 'map', 'mrr'],  # 複数の評価指標を追加
         'ndcg_eval_at': [3, 5, 10],
         'boosting_type': 'gbdt',
         'num_leaves': 239,
@@ -127,7 +127,12 @@ def get_fixed_params():
         'reg_lambda': 1.5006291342706868,
         'max_depth': 12,
         'verbosity': -1,
-        'num_threads': -1
+        'num_threads': -1,
+        # LambdaRank固有のパラメータ
+        'max_position': 10,
+        'label_gain': [0, 1, 3, 7, 15, 31, 63, 127, 255, 511],  # ラベルの重み付け
+        'sigma': 1.0,  # ペアワイズ損失のスケーリング
+        'truncation_level': 10  # 上位何件までを考慮するか
     }
     return params
 
@@ -139,6 +144,7 @@ class TensorBoardCallback:
         self.iteration = iteration
         self.fold_num = fold_num
         self.step = 0
+        self.best_scores = {}  # 各指標の最高スコアを記録
         
     def __call__(self, env):
         if self.tb_writer is None:
@@ -153,9 +159,30 @@ class TensorBoardCallback:
             # TensorBoardに記録
             self.tb_writer.add_scalar(tag, result, global_step)
             
+            # 各指標の最高スコアを更新
+            key = f"{data_name}_{eval_name}"
+            if key not in self.best_scores or result > self.best_scores[key]:
+                self.best_scores[key] = result
+                self.tb_writer.add_scalar(f"best_scores/{key}", result, global_step)
+            
             # 特別にNDCG@10も記録
             if eval_name == 'ndcg@10':
                 self.tb_writer.add_scalar(f"ndcg10_summary/fold_{self.fold_num}", result, global_step)
+        
+        # LambdaRank固有の指標を記録
+        if hasattr(env.model, 'get_evals_result'):
+            evals_result = env.model.get_evals_result()
+            for metric_name, metric_value in evals_result.items():
+                if 'lambdarank' in metric_name.lower():
+                    tag = f"fold_{self.fold_num}/lambdarank/{metric_name}"
+                    self.tb_writer.add_scalar(tag, metric_value, global_step)
+        
+        # 学習曲線を記録
+        if hasattr(env.model, 'get_learning_curves'):
+            learning_curves = env.model.get_learning_curves()
+            for curve_name, curve_data in learning_curves.items():
+                tag = f"fold_{self.fold_num}/learning_curves/{curve_name}"
+                self.tb_writer.add_scalar(tag, curve_data, global_step)
         
         self.step += 1
 
@@ -192,7 +219,7 @@ def train_single_iteration(iteration, fold_nums, tb_writer, base_seed=42):
             test_set = lgb.Dataset(x_test, label=y_test, group=test_query, reference=train_set)
             
             # Early stopping設定
-            early_stopping_callback = lgb.early_stopping(50)
+            early_stopping_callback = lgb.early_stopping(5)
             log_evaluation_callback = lgb.log_evaluation(0)  # ログを非表示
             
             # TensorBoardコールバック
@@ -206,7 +233,7 @@ def train_single_iteration(iteration, fold_nums, tb_writer, base_seed=42):
                 train_set,
                 valid_sets=[val_set],
                 valid_names=["valid"],
-                num_boost_round=1000,
+                num_boost_round=50,
                 callbacks=callbacks
             )
             
@@ -335,6 +362,7 @@ def plot_results(summary_df, log_dir):
     """結果をプロットする関数"""
     logger = logging.getLogger(__name__)
     
+    # メインの学習結果プロット
     fig, axes = plt.subplots(2, 2, figsize=(15, 10))
     fig.suptitle('100 Iterations Training Results', fontsize=16)
     
@@ -383,7 +411,21 @@ def plot_results(summary_df, log_dir):
     plt.savefig(plot_file, dpi=300, bbox_inches='tight')
     plt.close()
     
-    logger.info(f"Results plot saved to {plot_file}")
+    # LambdaRankの学習曲線プロット
+    if 'lambdarank_loss' in summary_df.columns:
+        plt.figure(figsize=(10, 6))
+        plt.plot(summary_df['iteration'], summary_df['lambdarank_loss'], 'r-', label='LambdaRank Loss')
+        plt.title('LambdaRank Loss Curve')
+        plt.xlabel('Iteration')
+        plt.ylabel('Loss')
+        plt.grid(True)
+        plt.legend()
+        plt.tight_layout()
+        loss_plot_file = os.path.join(log_dir, 'lambdarank_loss.png')
+        plt.savefig(loss_plot_file, dpi=300, bbox_inches='tight')
+        plt.close()
+    
+    logger.info(f"Results plots saved to {log_dir}")
 
 def log_final_statistics_to_tensorboard(tb_writer, summary_df, all_results):
     """最終統計をTensorBoardに記録"""
@@ -426,7 +468,7 @@ def main():
         start_time = time.time()
         
         # 使用するフォルド
-        fold_nums = [1, 2, 3]  # 3つのフォルドで評価
+        fold_nums = [1, 2, 3,4 ,5]
         logger.info(f"Using folds: {fold_nums}")
         
         # 100回のイテレーション実行

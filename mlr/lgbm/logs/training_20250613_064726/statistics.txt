@@ -1,0 +1,28 @@
+100 Iterations Training Statistics
+========================================
+Total iterations: 100
+Average NDCG@10: 0.4822 ± 0.0028
+Best NDCG@10: 0.4889
+Worst NDCG@10: 0.4731
+Median NDCG@10: 0.4824
+
+Fixed parameters:
+  objective: lambdarank
+  metric: ['ndcg', 'map', 'mrr']
+  ndcg_eval_at: [3, 5, 10]
+  boosting_type: gbdt
+  num_leaves: 239
+  learning_rate: 0.038054395619039415
+  feature_fraction: 0.6223597094305492
+  bagging_fraction: 0.902323321146222
+  bagging_freq: 1
+  min_child_samples: 62
+  reg_alpha: 0.0
+  reg_lambda: 1.5006291342706868
+  max_depth: 12
+  verbosity: -1
+  num_threads: -1
+  max_position: 10
+  label_gain: [0, 1, 3, 7, 15, 31, 63, 127, 255, 511]
+  sigma: 1.0
+  truncation_level: 10
